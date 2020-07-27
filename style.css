@@ -28,11 +28,15 @@ header {
   font-family: open_sansregular;
   background: #00897B;
 }
-header h1 {
-  font-size: 3em;
-  font-weight: bold;
-  color: #FFD54F;
-}
+    header h1 {
+        font-size: 3em;
+        font-weight: bold;
+        color: #FFD54F;
+        font-size: 72px;
+        background: -webkit-linear-gradient(#eee, #333);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
 
 .section {
   display: flex;
