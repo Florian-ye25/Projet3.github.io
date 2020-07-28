@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'gasparbold';
+    src: url('Gaspar Bold-webfont.eot');
+    src: url('Gaspar Bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Gaspar Bold-webfont.woff2') format('woff2'),
+         url('Gaspar Bold-webfont.woff') format('woff'),
+         url('Gaspar Bold-webfont.ttf') format('truetype'),
+         url('Gaspar Bold-webfont.svg#gasparbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+

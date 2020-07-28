@@ -12,72 +12,100 @@
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: "caveatregular";
+  src: url("caveat-regular-webfont.eot");
+  src: url("caveat-regular-webfont.eot?#iefix") format("embedded-opentype"), url("caveat-regular-webfont.woff2") format("woff2"), url("caveat-regular-webfont.woff") format("woff"), url("caveat-regular-webfont.ttf") format("truetype"), url("caveat-regular-webfont.svg#caveatregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "gasparregular";
+  src: url("Gaspar Regular-webfont.eot");
+  src: url("Gaspar Regular-webfont.eot?#iefix") format("embedded-opentype"), url("Gaspar Regular-webfont.woff2") format("woff2"), url("Gaspar Regular-webfont.woff") format("woff"), url("Gaspar Regular-webfont.ttf") format("truetype"), url("Gaspar Regular-webfont.svg#gasparregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "cmu_serifitalic";
+  src: url("cmunti-webfont.eot");
+  src: url("cmunti-webfont.eot?#iefix") format("embedded-opentype"), url("cmunti-webfont.woff2") format("woff2"), url("cmunti-webfont.woff") format("woff"), url("cmunti-webfont.ttf") format("truetype"), url("cmunti-webfont.svg#cmu_serifitalic") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "tex_gyre_scholaregular";
+  src: url("texgyreschola-regular-webfont.eot");
+  src: url("texgyreschola-regular-webfont.eot?#iefix") format("embedded-opentype"), url("texgyreschola-regular-webfont.woff2") format("woff2"), url("texgyreschola-regular-webfont.woff") format("woff"), url("texgyreschola-regular-webfont.ttf") format("truetype"), url("texgyreschola-regular-webfont.svg#tex_gyre_scholaregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 25px;
+  background: #579C87;
+}
+
+.index {
+  display: flex;
+  justify-content: center;
+  padding: 50px;
+}
+.index > .menu {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.index > .menu .bloc_menu {
+  text-align: center;
+  width: 45%;
+  height: 300px;
+  padding: 25px 0px 25px 0px;
+  margin: 25px 0px 25px 0px;
+}
+
+footer {
+  font-family: open_sanslight;
+  background: #579C87;
+  display: flex;
+  justify-content: space-between;
+  color: #FFD54F;
+  font-weight: normal;
+  position: fixed;
+  bottom: 0;
+  width: 99.2%;
+}
+footer h2 {
+  padding: 0px 15px 0px 15px;
+}
+
 .cadre_rouge {
   border: 1px solid red;
 }
 
 body {
-  margin: auto;
+  margin: 8px;
+  font-size: 16px;
   display: flex;
   flex-direction: column;
-}
-
-header {
-  text-align: center;
-  width: 100%;
-  font-family: open_sansregular;
-  background: #00897B;
-}
-    header h1 {
-        font-size: 3em;
-        font-weight: bold;
-        color: #FFD54F;
-        font-size: 72px;
-        background: -webkit-linear-gradient(#eee, #333);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-    }
-
-.section {
-  display: flex;
-  flex-wrap: wrap;
-  text-align: center;
-}
-.section .top_menu, .section .low_menu {
-  display: flex;
-  width: 100%;
-  justify-content: space-around;
-}
-.section a {
-  text-decoration: none;
-}
-.section a:hover {
-  text-decoration: none;
 }
 
 .next {
   text-align: center;
   display: flex;
   justify-content: center;
+  padding-bottom: 75px;
 }
 .next h2 {
   padding: 5px 0px 5px 0px;
   width: 15%;
-  background: #00897B;
+  background: #579C87;
   color: #FFD54F;
   border-radius: 5px;
-}
-
-footer {
-  font-family: open_sanslight;
-  background: #00897B;
-  display: flex;
-  justify-content: space-between;
-  color: #FFD54F;
-  font-weight: normal;
-}
-footer h2 {
-  padding: 0px 15px 0px 15px;
 }
 
 /*# sourceMappingURL=style.css.map */

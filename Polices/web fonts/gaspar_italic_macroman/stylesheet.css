@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'gasparitalic';
+    src: url('Gaspar Regular Italic-webfont.eot');
+    src: url('Gaspar Regular Italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Gaspar Regular Italic-webfont.woff2') format('woff2'),
+         url('Gaspar Regular Italic-webfont.woff') format('woff'),
+         url('Gaspar Regular Italic-webfont.ttf') format('truetype'),
+         url('Gaspar Regular Italic-webfont.svg#gasparitalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+

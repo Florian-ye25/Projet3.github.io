@@ -13,7 +13,7 @@
     "url": "git+https://github.com/Florian-ye25/Projet3.github.io.git"
   },
   "scripts": {
-    "sass": "sass --watch ./style.scss:./style.css"
+    "sass": "sass --watch ./main.scss:./style.css"
   },
   "version": "1.0.0"
 }

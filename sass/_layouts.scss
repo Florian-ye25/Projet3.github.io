@@ -1,0 +1,46 @@
+    header {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding: 25px;
+        background: #579C87;
+    }
+
+   .index {
+       display: flex;
+       justify-content: center;
+       padding: 50px;
+       
+      > .menu {
+            width: 50%;
+            height: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            .bloc_menu {
+                text-align: center;
+                width: 45%;
+                height: 300px;
+                padding: 25px 0px 25px 0px;
+                margin: 25px 0px 25px 0px; 
+            }
+      }
+
+
+   }
+
+    footer {
+        font-family: open_sanslight;
+        background: $green;
+        display: flex;
+        justify-content: space-between;
+        color: $yellow;
+        font-weight: normal;
+        position: fixed;
+        bottom: 0;
+       width: 99.2%;
+
+        h2 {
+            padding: 0px 15px 0px 15px;
+        }
+    }
