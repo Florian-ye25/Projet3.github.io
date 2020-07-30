@@ -13,6 +13,13 @@
   font-style: normal;
 }
 @font-face {
+  font-family: "caveatbold";
+  src: url("caveat-bold-webfont.eot");
+  src: url("caveat-bold-webfont.eot?#iefix") format("embedded-opentype"), url("caveat-bold-webfont.woff2") format("woff2"), url("caveat-bold-webfont.woff") format("woff"), url("caveat-bold-webfont.ttf") format("truetype"), url("caveat-bold-webfont.svg#caveatbold") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
   font-family: "caveatregular";
   src: url("caveat-regular-webfont.eot");
   src: url("caveat-regular-webfont.eot?#iefix") format("embedded-opentype"), url("caveat-regular-webfont.woff2") format("woff2"), url("caveat-regular-webfont.woff") format("woff"), url("caveat-regular-webfont.ttf") format("truetype"), url("caveat-regular-webfont.svg#caveatregular") format("svg");
@@ -48,24 +55,40 @@ header {
   background: #579C87;
 }
 
-.index {
+section {
   display: flex;
   justify-content: center;
-  padding: 50px;
-}
-.index > .menu {
-  width: 50%;
-  height: 100%;
-  display: flex;
-  flex-wrap: wrap;
   justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 25px 25% 25px 25%;
 }
-.index > .menu .bloc_menu {
-  text-align: center;
+
+.bloc {
   width: 45%;
-  height: 300px;
-  padding: 25px 0px 25px 0px;
-  margin: 25px 0px 25px 0px;
+}
+.bloc a {
+  text-decoration: none;
+}
+.bloc:nth-child(1) .bloc_menu {
+  background: #FDE0DC;
+  color: black;
+  font-family: "caveatbold";
+}
+.bloc:nth-child(2) .bloc_menu {
+  background: #FFF5FE;
+}
+.bloc:nth-child(3) .bloc_menu {
+  background: #F9F9F9;
+}
+.bloc_menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 35vw;
+}
+.bloc_menu img {
+  width: 15%;
 }
 
 footer {
@@ -88,10 +111,10 @@ footer h2 {
 }
 
 body {
-  margin: 8px;
   font-size: 16px;
   display: flex;
   flex-direction: column;
+  font-family: "caveatregular", "gasparregular", "cmu_serifitalic", "tex_gyre_scholaregular", "caveatbold";
 }
 
 .next {
