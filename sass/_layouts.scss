@@ -1,17 +1,22 @@
-    header {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        padding: 5px;
-        background: $green;
+header {
+    font-family: 'kanitextrabold';
+    font-size: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background: $green;
+
+    h1 {
+        color: #FDCB46;
     }
+}
 
 section {
     display: flex;
     justify-content: center;
     justify-content: space-around;
     flex-wrap: wrap;
-    margin: 25px 25% 25px 25%;
+    margin: 25px 35% 25px 35%;
 }
 
 .bloc {
@@ -26,6 +31,7 @@ section {
             background: #FDE0DC;
             color: black;
             font-family: 'caveatbold';
+            box-shadow: 0px 2px 5px #BDBDBD;
         }
     }
 
@@ -33,9 +39,13 @@ section {
         .bloc_menu {
             background: #FFF5FE;
             font-family: 'cmu_serifitalic';
-            background: linear-gradient(125deg, #905BFD 0%, #D8852E 90%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
+            box-shadow: 0px 2px 5px #BDBDBD;
+
+            h2, h3 {
+                background: linear-gradient(125deg, #905BFD 0%, #D8852E 90%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
         }
     }
 
@@ -43,12 +53,26 @@ section {
         .bloc_menu {
             background: #F9F9F9;
             font-family: 'cmu_serifitalic';
+            box-shadow: 0px 2px 5px #BDBDBD;
+
+            h2, h3 {
+                background: linear-gradient(125deg, #103DE1 0%, #62B0F9 90%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
         }
     }
 
     &:nth-child(4) {
         .bloc_menu {
             font-family: 'gasparregular';
+            box-shadow: 0px 2px 5px #BDBDBD;
+
+            h2, h3 {
+                background: linear-gradient(125deg, #44983D 0%, #BFFF7E 90%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
         }
     }
 
@@ -57,10 +81,14 @@ section {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        height: 15vw;
+        height: 14vw;
+
+        h3 {
+            margin: 0px;
+        }
 
         img {
-            width: 15%;
+            width: 20%;
         }
     }
 }

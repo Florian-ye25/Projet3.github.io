@@ -47,12 +47,23 @@
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: "kanitextrabold";
+  src: url("Polices/webfonts/kanit_extrabold_macroman/kanit-extrabold-webfont.eot");
+  src: url("Polices/webfonts/kanit_extrabold_macroman/kanit-extrabold-webfont.eot?#iefix") format("embedded-opentype"), url("Polices/webfonts/kanit_extrabold_macroman/kanit-extrabold-webfont.woff2") format("woff2"), url("Polices/webfonts/kanit_extrabold_macroman/kanit-extrabold-webfont.woff") format("woff"), url("Polices/webfonts/kanit_extrabold_macroman/kanit-extrabold-webfont.ttf") format("truetype"), url("Polices/webfonts/kanit_extrabold_macroman/kanit-extrabold-webfont.svg#kanitextrabold") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
 header {
+  font-family: "kanitextrabold";
+  font-size: 20px;
   display: flex;
   flex-direction: row;
   justify-content: center;
-  padding: 5px;
   background: #579C87;
+}
+header h1 {
+  color: #FDCB46;
 }
 
 section {
@@ -60,7 +71,7 @@ section {
   justify-content: center;
   justify-content: space-around;
   flex-wrap: wrap;
-  margin: 25px 25% 25px 25%;
+  margin: 25px 35% 25px 35%;
 }
 
 .bloc {
@@ -73,10 +84,14 @@ section {
   background: #FDE0DC;
   color: black;
   font-family: "caveatbold";
+  box-shadow: 0px 2px 5px #BDBDBD;
 }
 .bloc:nth-child(2) .bloc_menu {
   background: #FFF5FE;
   font-family: "cmu_serifitalic";
+  box-shadow: 0px 2px 5px #BDBDBD;
+}
+.bloc:nth-child(2) .bloc_menu h2, .bloc:nth-child(2) .bloc_menu h3 {
   background: linear-gradient(125deg, #905BFD 0%, #D8852E 90%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -84,19 +99,34 @@ section {
 .bloc:nth-child(3) .bloc_menu {
   background: #F9F9F9;
   font-family: "cmu_serifitalic";
+  box-shadow: 0px 2px 5px #BDBDBD;
+}
+.bloc:nth-child(3) .bloc_menu h2, .bloc:nth-child(3) .bloc_menu h3 {
+  background: linear-gradient(125deg, #103DE1 0%, #62B0F9 90%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .bloc:nth-child(4) .bloc_menu {
   font-family: "gasparregular";
+  box-shadow: 0px 2px 5px #BDBDBD;
+}
+.bloc:nth-child(4) .bloc_menu h2, .bloc:nth-child(4) .bloc_menu h3 {
+  background: linear-gradient(125deg, #44983D 0%, #BFFF7E 90%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .bloc_menu {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 15vw;
+  height: 14vw;
+}
+.bloc_menu h3 {
+  margin: 0px;
 }
 .bloc_menu img {
-  width: 15%;
+  width: 20%;
 }
 
 footer {
@@ -119,7 +149,6 @@ footer h2 {
 }
 
 body {
-  font-size: 16px;
   display: flex;
   flex-direction: column;
 }
