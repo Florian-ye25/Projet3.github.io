@@ -1,0 +1,10 @@
+Inverser une image :
+https://css-tricks.com/snippets/css/flip-an-image/
+
+Oh my food exemple: 
+https://heloowweb.github.io/ohmyfood/index.html
+
+Trouver le code couleur d'une image:
+https://html-color-codes.info/colors-from-image/
+
+
