@@ -1,2 +1,16 @@
+/* Vert principalement utilise pour mon header et footer */
 $green: #579C87;
-$yellow: #FFD54F;
+
+/* Jaune de mon logo ohmyfood */
+$yellow: #FDCB46;
+
+/* Rose de fond du menu du chic a la francaise */
+$colorchic: #FFF5FE;
+
+/* Beige de fond du menu de la note enchantee */
+$colorkey: #FCDFDB;
+
+/* Box shadow principal a utiliser pour les effets d'ombres sur differentes pages */
+@mixin shadow-box {
+    box-shadow: 0px 2px 5px #BDBDBD;
+}

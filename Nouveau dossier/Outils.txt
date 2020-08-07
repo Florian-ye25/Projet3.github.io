@@ -7,4 +7,7 @@ https://heloowweb.github.io/ohmyfood/index.html
 Trouver le code couleur d'une image:
 https://html-color-codes.info/colors-from-image/
 
+Fonction de renvoi vers un mail éxistant: 
+<a href="mailto:xxx@yz.org" </a>
+
 
