@@ -5,7 +5,7 @@
     justify-content: center;
     justify-content: space-around;
     flex-wrap: wrap;
-    margin: 25px 35% 25px 35%;
+    margin: 50px 35% 25px 35%;
 }
 
 .bloc {
@@ -16,11 +16,25 @@
     }
 
     &:nth-child(1) {
+
         .bloc_menu {
             background: $colorkey;
             color: black;
             font-family: 'caveatbold';
             @include shadow-box;
+            margin-bottom: 25px;
+            transition: transform 400ms;
+
+            &detail {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                transition: transform 400ms;
+
+                &:hover {
+                    transform: scale(1.15);
+                }
+            }
         }
     }
 
@@ -86,7 +100,8 @@
     text-align: center;
     display: flex;
     justify-content: center;
-    padding-bottom: 75px;
+    padding-bottom: 0;
+    margin-bottom: 5%;
 
     h2 {
         padding: 5px 0px 5px 0px;
@@ -101,26 +116,22 @@
 
 .note_enchantee {
     .img_top {
+        margin-top: 25px;
         width: 10%;
     }
 
     .img_low {
+        width: 15%;
     }
 
     > .main_title {
-        font-family: 'open_sansregular';
-        font-size: 26px;
-        text-align: center;
+        @include main_title;
     }
 
     .menu {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        background: $colorkey;
+        @include menu;
         font-family: 'caveatregular';
-        margin: 0 25% 7% 25%;
+        background: $colorkey;
 
         &_title {
             font-size: 34px;
@@ -128,36 +139,199 @@
         }
 
         > table {
-            display: flex;
-            justify-content: center;
-            flex-direction: column;
-            width: 75%;
-
-
-            tr {
-                display: flex;
-                justify-content: space-between;
-                text-align: left;
-            }
+            width: 80%;
 
             th {
-                font-size: 24px;
-                width: 100%;
+                > h3 {
+                    margin: 18px 0 18px 0;
+                }
             }
 
             td {
                 font-size: 20px;
-                width: auto;
             }
         }
     }
 
+    .trait_droite {
+        @include right_line;
+    }
+
     .trait_gauche {
-        padding-right: 10px;
+        @include left_line;
+    }
+
+    h4 {
+        font-size: 28px;
+        display: flex;
+    }
+}
+    /* Proprietees de la page le chic a la francaise */
+
+.french_chic {
+    > .main_title {
+        @include main_title;
+    }
+
+    .menu {
+        @include menu;
+        padding: 50px 0 50px 0;
+        font-family: 'tex_gyre_scholaregular';
+        padding-bottom: 10%;
+        background: $colorchic;
+
+        &_title {
+            font-size: 28px;
+            margin: 10% 0 10% 0px;
+            background: linear-gradient(125deg, #905BFD 0%, #D8852E 90%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        > table {
+            width: 80%;
+
+            tr {
+                > .plat {
+                    margin-left: 25px;
+                }
+                
+                > .prix {
+                    margin-right: 25px;
+                }
+            }
+
+            th {
+                > h3 {
+                    font-size: 14px;
+                    padding-top: 15px;
+                }
+            }
+
+            td {
+                font-size: 14px;
+            }
+        }
+    }
+
+    .brown {
+        color: #C67412;
+    }
+
+    .purple {
+        color: #A56799;
+    }
+
+    .blue {
+        color: #6E4CCC;
     }
 
     .trait_droite {
-        padding-right: 15px;
-        transform: scaleX(-1);
+        @include right_line;
+    }
+
+    .trait_gauche {
+        @include left_line;
+    }
+}
+
+/* Proprietees de la page la palette du gout */
+
+.palette_du_gout {
+    > .main_title {
+        @include main_title;
+    }
+
+    .menu {
+        @include menu;
+        padding: 50px 0 50px 0;
+        font-family: 'gasparitalic';
+        font-weight: bold;
+        padding-bottom: 10%;
+
+        &_title {
+            font-size: 50px;
+            margin: 10% 0 10% 0px;
+            background: linear-gradient(125deg, #44983D 0%, #BFFF7E 90%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        > table {
+            width: 90%;
+
+            tr {
+            }
+
+            th {
+                > h3 {
+                    font-size: 16px;
+                    padding-top: 10px;
+                }
+            }
+
+            td {
+                font-size: 14px;
+            }
+        }
+    }
+
+    .trait_droite {
+        @include right_line;
+    }
+
+    .trait_gauche {
+        @include left_line;
+    }
+}
+
+/* Proprietees de la page le delice des papilles */
+
+.delice_papilles {
+    > .main_title {
+        @include main_title;
+    }
+
+    .menu {
+        @include menu;
+        padding: 50px 0 50px 0;
+        font-family: 'cmu_serifitalic';
+        font-weight: bold;
+        padding-bottom: 10%;
+        background: $colordelice;
+
+        &_title {
+            font-size: 50px;
+            margin: 10% 0 10% 0px;
+            background: linear-gradient(125deg, #103DE1 0%, #62B0F9 90%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        > table {
+            width: 90%;
+
+            tr {
+            }
+
+            th {
+                > h3 {
+                    font-size: 16px;
+                    padding-top: 10px;
+                }
+            }
+
+            td {
+                font-size: 14px;
+            }
+        }
+    }
+
+    .trait_droite {
+        @include right_line;
+    }
+
+    .trait_gauche {
+        @include left_line;
     }
 }

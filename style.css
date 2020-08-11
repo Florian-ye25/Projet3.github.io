@@ -27,9 +27,9 @@
   font-style: normal;
 }
 @font-face {
-  font-family: "gasparregular";
-  src: url("Polices/webfonts/gaspar_regular_macroman/Gaspar Regular-webfont.eot");
-  src: url("Polices/webfonts/gaspar_regular_macroman/Gaspar Regular-webfont.eot?#iefix") format("embedded-opentype"), url("Polices/webfonts/gaspar_regular_macroman/Gaspar Regular-webfont.woff2") format("woff2"), url("Polices/webfonts/gaspar_regular_macroman/Gaspar Regular-webfont.woff") format("woff"), url("Polices/webfonts/gaspar_regular_macroman/Gaspar Regular-webfont.ttf") format("truetype"), url("Polices/webfonts/gaspar_regular_macroman/Gaspar Regular-webfont.svg#gasparregular") format("svg");
+  font-family: "gasparitalic";
+  src: url("Polices/webfonts/gaspar_italic_macroman/Gaspar Regular Italic-webfont.eot");
+  src: url("Polices/webfonts/gaspar_italic_macroman/Gaspar Regular Italic-webfont.eot?#iefix") format("embedded-opentype"), url("Polices/webfonts/gaspar_italic_macroman/Gaspar Regular Italic-webfont.woff2") format("woff2"), url("Polices/webfonts/gaspar_italic_macroman/Gaspar Regular Italic-webfont.woff") format("woff"), url("Polices/webfonts/gaspar_italic_macroman/Gaspar Regular Italic-webfont.ttf") format("truetype"), url("Polices/webfonts/gaspar_italic_macroman/Gaspar Regular Italic-webfont.svg#gasparitalic") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -56,6 +56,7 @@
 }
 /* Vert principalement utilise pour mon header et footer */
 /* Jaune de mon logo ohmyfood */
+/* Couleur de fond du menu le delice des papilles*/
 /* Rose de fond du menu du chic a la francaise */
 /* Beige de fond du menu de la note enchantee */
 /* Box shadow principal a utiliser pour les effets d'ombres sur differentes pages */
@@ -65,7 +66,7 @@
   justify-content: center;
   justify-content: space-around;
   flex-wrap: wrap;
-  margin: 25px 35% 25px 35%;
+  margin: 50px 35% 25px 35%;
 }
 
 .bloc {
@@ -79,6 +80,17 @@
   color: black;
   font-family: "caveatbold";
   box-shadow: 0px 2px 5px #BDBDBD;
+  margin-bottom: 25px;
+  transition: transform 400ms;
+}
+.bloc:nth-child(1) .bloc_menudetail {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 400ms;
+}
+.bloc:nth-child(1) .bloc_menudetail:hover {
+  transform: scale(1.15);
 }
 .bloc:nth-child(2) .bloc_menu {
   background: #FFF5FE;
@@ -127,7 +139,8 @@
   text-align: center;
   display: flex;
   justify-content: center;
-  padding-bottom: 75px;
+  padding-bottom: 0;
+  margin-bottom: 5%;
 }
 .next h2 {
   padding: 5px 0px 5px 0px;
@@ -139,11 +152,15 @@
 
 /* Proprietees de la page lanoteenchantee.html */
 .note_enchantee .img_top {
+  margin-top: 25px;
   width: 10%;
+}
+.note_enchantee .img_low {
+  width: 15%;
 }
 .note_enchantee > .main_title {
   font-family: "open_sansregular";
-  font-size: 26px;
+  font-size: 30px;
   text-align: center;
 }
 .note_enchantee .menu {
@@ -151,39 +168,267 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: #FCDFDB;
-  font-family: "caveatregular";
   margin: 0 25% 7% 25%;
+  box-shadow: 0px 2px 5px #BDBDBD;
+  font-family: "caveatregular";
+  background: #FCDFDB;
+}
+.note_enchantee .menu > table {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: left;
+}
+.note_enchantee .menu > table tr {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+.note_enchantee .menu > table th {
+  font-size: 24px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  justify-content: space-between;
+}
+.note_enchantee .menu > table th > p {
+  width: 35%;
 }
 .note_enchantee .menu_title {
   font-size: 34px;
   margin-top: 0;
 }
 .note_enchantee .menu > table {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  width: 75%;
+  width: 80%;
 }
-.note_enchantee .menu > table tr {
-  display: flex;
-  justify-content: space-between;
-  text-align: left;
-}
-.note_enchantee .menu > table th {
-  font-size: 24px;
-  width: 100%;
+.note_enchantee .menu > table th > h3 {
+  margin: 18px 0 18px 0;
 }
 .note_enchantee .menu > table td {
   font-size: 20px;
-  width: auto;
-}
-.note_enchantee .trait_gauche {
-  padding-right: 10px;
 }
 .note_enchantee .trait_droite {
-  padding-right: 15px;
   transform: scaleX(-1);
+  padding-right: 5px;
+  width: 100%;
+}
+.note_enchantee .trait_gauche {
+  width: 100%;
+}
+.note_enchantee h4 {
+  font-size: 28px;
+  display: flex;
+}
+
+/* Proprietees de la page le chic a la francaise */
+.french_chic > .main_title {
+  font-family: "open_sansregular";
+  font-size: 30px;
+  text-align: center;
+}
+.french_chic .menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 25% 7% 25%;
+  box-shadow: 0px 2px 5px #BDBDBD;
+  padding: 50px 0 50px 0;
+  font-family: "tex_gyre_scholaregular";
+  padding-bottom: 10%;
+  background: #FFF5FE;
+}
+.french_chic .menu > table {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: left;
+}
+.french_chic .menu > table tr {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+.french_chic .menu > table th {
+  font-size: 24px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  justify-content: space-between;
+}
+.french_chic .menu > table th > p {
+  width: 35%;
+}
+.french_chic .menu_title {
+  font-size: 28px;
+  margin: 10% 0 10% 0px;
+  background: linear-gradient(125deg, #905BFD 0%, #D8852E 90%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.french_chic .menu > table {
+  width: 80%;
+}
+.french_chic .menu > table tr > .plat {
+  margin-left: 25px;
+}
+.french_chic .menu > table tr > .prix {
+  margin-right: 25px;
+}
+.french_chic .menu > table th > h3 {
+  font-size: 14px;
+  padding-top: 15px;
+}
+.french_chic .menu > table td {
+  font-size: 14px;
+}
+.french_chic .brown {
+  color: #C67412;
+}
+.french_chic .purple {
+  color: #A56799;
+}
+.french_chic .blue {
+  color: #6E4CCC;
+}
+.french_chic .trait_droite {
+  transform: scaleX(-1);
+  padding-right: 5px;
+  width: 100%;
+}
+.french_chic .trait_gauche {
+  width: 100%;
+}
+
+/* Proprietees de la page la palette du gout */
+.palette_du_gout > .main_title {
+  font-family: "open_sansregular";
+  font-size: 30px;
+  text-align: center;
+}
+.palette_du_gout .menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 25% 7% 25%;
+  box-shadow: 0px 2px 5px #BDBDBD;
+  padding: 50px 0 50px 0;
+  font-family: "gasparitalic";
+  font-weight: bold;
+  padding-bottom: 10%;
+}
+.palette_du_gout .menu > table {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: left;
+}
+.palette_du_gout .menu > table tr {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+.palette_du_gout .menu > table th {
+  font-size: 24px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  justify-content: space-between;
+}
+.palette_du_gout .menu > table th > p {
+  width: 35%;
+}
+.palette_du_gout .menu_title {
+  font-size: 50px;
+  margin: 10% 0 10% 0px;
+  background: linear-gradient(125deg, #44983D 0%, #BFFF7E 90%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.palette_du_gout .menu > table {
+  width: 90%;
+}
+.palette_du_gout .menu > table th > h3 {
+  font-size: 16px;
+  padding-top: 10px;
+}
+.palette_du_gout .menu > table td {
+  font-size: 14px;
+}
+.palette_du_gout .trait_droite {
+  transform: scaleX(-1);
+  padding-right: 5px;
+  width: 100%;
+}
+.palette_du_gout .trait_gauche {
+  width: 100%;
+}
+
+/* Proprietees de la page le delice des papilles */
+.delice_papilles > .main_title {
+  font-family: "open_sansregular";
+  font-size: 30px;
+  text-align: center;
+}
+.delice_papilles .menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 25% 7% 25%;
+  box-shadow: 0px 2px 5px #BDBDBD;
+  padding: 50px 0 50px 0;
+  font-family: "cmu_serifitalic";
+  font-weight: bold;
+  padding-bottom: 10%;
+  background: #EDEFEF;
+}
+.delice_papilles .menu > table {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: left;
+}
+.delice_papilles .menu > table tr {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+.delice_papilles .menu > table th {
+  font-size: 24px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  justify-content: space-between;
+}
+.delice_papilles .menu > table th > p {
+  width: 35%;
+}
+.delice_papilles .menu_title {
+  font-size: 50px;
+  margin: 10% 0 10% 0px;
+  background: linear-gradient(125deg, #103DE1 0%, #62B0F9 90%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.delice_papilles .menu > table {
+  width: 90%;
+}
+.delice_papilles .menu > table th > h3 {
+  font-size: 16px;
+  padding-top: 10px;
+}
+.delice_papilles .menu > table td {
+  font-size: 14px;
+}
+.delice_papilles .trait_droite {
+  transform: scaleX(-1);
+  padding-right: 5px;
+  width: 100%;
+}
+.delice_papilles .trait_gauche {
+  width: 100%;
 }
 
 header {
