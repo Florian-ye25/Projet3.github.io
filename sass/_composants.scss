@@ -43,6 +43,19 @@
             background: #FFF5FE;
             font-family: 'cmu_serifitalic';
             @include shadow-box;
+            transition: transform 400ms;
+
+            &detail {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                transition: transform 400ms;
+                text-align: center;
+
+                &:hover {
+                    transform: scale(1.15);
+                }
+            }
 
             h2, h3 {
                 background: linear-gradient(125deg, #905BFD 0%, #D8852E 90%);
@@ -57,6 +70,18 @@
             background: #F9F9F9;
             font-family: 'cmu_serifitalic';
             @include shadow-box;
+            transition: transform 400ms;
+
+            &detail {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                transition: transform 400ms;
+
+                &:hover {
+                    transform: scale(1.15);
+                }
+            }
 
             h2, h3 {
                 background: linear-gradient(125deg, #103DE1 0%, #62B0F9 90%);
@@ -70,6 +95,18 @@
         .bloc_menu {
             font-family: 'gasparregular';
             @include shadow-box;
+            transition: transform 400ms;
+
+            &detail {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                transition: transform 400ms;
+
+                &:hover {
+                    transform: scale(1.15);
+                }
+            }
 
             h2, h3 {
                 background: linear-gradient(125deg, #44983D 0%, #BFFF7E 90%);
@@ -96,242 +133,225 @@
     }
 }
 
-.next {
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    padding-bottom: 0;
-    margin-bottom: 5%;
-
-    h2 {
-        padding: 5px 0px 5px 0px;
-        width: 15%;
-        background: $green;
-        color: $yellow;
-        border-radius: 5px;
-    }
-}
-
-/* Proprietees de la page lanoteenchantee.html */
-
-.note_enchantee {
-    .img_top {
-        margin-top: 25px;
-        width: 10%;
-    }
-
-    .img_low {
-        width: 15%;
-    }
-
-    > .main_title {
-        @include main_title;
-    }
-
-    .menu {
-        @include menu;
-        font-family: 'caveatregular';
-        background: $colorkey;
-
-        &_title {
-            font-size: 34px;
-            margin-top: 0;
-        }
-
-        > table {
-            width: 80%;
-
-            th {
-                > h3 {
-                    margin: 18px 0 18px 0;
-                }
-            }
-
-            td {
-                font-size: 20px;
-            }
-        }
-    }
-
-    .trait_droite {
-        @include right_line;
-    }
-
-    .trait_gauche {
-        @include left_line;
-    }
-
-    h4 {
-        font-size: 28px;
+    .next {
+        text-align: center;
         display: flex;
+        justify-content: center;
+        padding-bottom: 0;
+        margin-bottom: 5%;
+
+        h2 {
+            padding: 5px 0px 5px 0px;
+            width: 15%;
+            background: $green;
+            color: $yellow;
+            border-radius: 5px;
+        }
     }
-}
-    /* Proprietees de la page le chic a la francaise */
+    /* Proprietees de la page lanoteenchantee.html */
+    .note_enchantee {
+        .img_top {
+            margin-top: 25px;
+            width: 10%;
+        }
 
-.french_chic {
-    > .main_title {
-        @include main_title;
-    }
+        .img_low {
+            width: 15%;
+        }
 
-    .menu {
-        @include menu;
-        padding: 50px 0 50px 0;
-        font-family: 'tex_gyre_scholaregular';
-        padding-bottom: 10%;
-        background: $colorchic;
+        > .main_title {
+            @include main_title;
+        }
 
-        &_title {
+        .menu {
+            @include menu;
+            font-family: 'caveatregular';
+            background: $colorkey;
+
+            &_title {
+                font-size: 34px;
+                margin-top: 0;
+            }
+
+            > table {
+                width: 80%;
+
+                th {
+                    > h3 {
+                        margin: 18px 0 18px 0;
+                    }
+                }
+
+                td {
+                    font-size: 20px;
+                }
+            }
+        }
+
+        .trait_droite {
+            @include right_line;
+        }
+
+        .trait_gauche {
+            @include left_line;
+        }
+
+        h4 {
             font-size: 28px;
-            margin: 10% 0 10% 0px;
-            background: linear-gradient(125deg, #905BFD 0%, #D8852E 90%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
+            display: flex;
+        }
+    }
+    /* Proprietees de la page le chic a la francaise */
+    .french_chic {
+        > .main_title {
+            @include main_title;
         }
 
-        > table {
-            width: 80%;
+        .menu {
+            @include menu;
+            padding: 50px 0 50px 0;
+            font-family: 'tex_gyre_scholaregular';
+            padding-bottom: 10%;
+            background: $colorchic;
 
-            tr {
-                > .plat {
-                    margin-left: 25px;
-                }
-                
-                > .prix {
-                    margin-right: 25px;
-                }
+            &_title {
+                font-size: 28px;
+                margin: 10% 0 10% 0px;
+                background: linear-gradient(125deg, #905BFD 0%, #D8852E 90%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
             }
 
-            th {
-                > h3 {
+            > table {
+                width: 80%;
+
+                th {
+                    > h3 {
+                        font-size: 14px;
+                        padding-top: 15px;
+                    }
+                }
+
+                td {
                     font-size: 14px;
-                    padding-top: 15px;
                 }
             }
-
-            td {
-                font-size: 14px;
-            }
-        }
-    }
-
-    .brown {
-        color: #C67412;
-    }
-
-    .purple {
-        color: #A56799;
-    }
-
-    .blue {
-        color: #6E4CCC;
-    }
-
-    .trait_droite {
-        @include right_line;
-    }
-
-    .trait_gauche {
-        @include left_line;
-    }
-}
-
-/* Proprietees de la page la palette du gout */
-
-.palette_du_gout {
-    > .main_title {
-        @include main_title;
-    }
-
-    .menu {
-        @include menu;
-        padding: 50px 0 50px 0;
-        font-family: 'gasparitalic';
-        font-weight: bold;
-        padding-bottom: 10%;
-
-        &_title {
-            font-size: 50px;
-            margin: 10% 0 10% 0px;
-            background: linear-gradient(125deg, #44983D 0%, #BFFF7E 90%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
         }
 
-        > table {
-            width: 90%;
+        .brown {
+            color: #C67412;
+        }
 
-            tr {
+        .purple {
+            color: #A56799;
+        }
+
+        .blue {
+            color: #6E4CCC;
+        }
+
+        .trait_droite {
+            @include right_line;
+        }
+
+        .trait_gauche {
+            @include left_line;
+        }
+    }
+    /* Proprietees de la page la palette du gout */
+    .palette_du_gout {
+        > .main_title {
+            @include main_title;
+        }
+
+        .menu {
+            @include menu;
+            padding: 50px 0 50px 0;
+            font-family: 'gasparitalic';
+            font-weight: bold;
+            padding-bottom: 10%;
+
+            &_title {
+                font-size: 50px;
+                margin: 10% 0 10% 0px;
+                background: linear-gradient(125deg, #44983D 0%, #BFFF7E 90%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
             }
 
-            th {
-                > h3 {
-                    font-size: 16px;
-                    padding-top: 10px;
+            > table {
+                width: 90%;
+
+                tr {
+                }
+
+                th {
+                    > h3 {
+                        font-size: 16px;
+                        padding-top: 10px;
+                    }
+                }
+
+                td {
+                    font-size: 14px;
                 }
             }
-
-            td {
-                font-size: 14px;
-            }
-        }
-    }
-
-    .trait_droite {
-        @include right_line;
-    }
-
-    .trait_gauche {
-        @include left_line;
-    }
-}
-
-/* Proprietees de la page le delice des papilles */
-
-.delice_papilles {
-    > .main_title {
-        @include main_title;
-    }
-
-    .menu {
-        @include menu;
-        padding: 50px 0 50px 0;
-        font-family: 'cmu_serifitalic';
-        font-weight: bold;
-        padding-bottom: 10%;
-        background: $colordelice;
-
-        &_title {
-            font-size: 50px;
-            margin: 10% 0 10% 0px;
-            background: linear-gradient(125deg, #103DE1 0%, #62B0F9 90%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
         }
 
-        > table {
-            width: 90%;
+        .trait_droite {
+            @include right_line;
+        }
 
-            tr {
+        .trait_gauche {
+            @include left_line;
+        }
+    }
+    /* Proprietees de la page le delice des papilles */
+    .delice_papilles {
+        > .main_title {
+            @include main_title;
+        }
+
+        .menu {
+            @include menu;
+            padding: 50px 0 50px 0;
+            font-family: 'cmu_serifitalic';
+            font-weight: bold;
+            padding-bottom: 10%;
+            background: $colordelice;
+
+            &_title {
+                font-size: 50px;
+                margin: 10% 0 10% 0px;
+                background: linear-gradient(125deg, #103DE1 0%, #62B0F9 90%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
             }
 
-            th {
-                > h3 {
-                    font-size: 16px;
-                    padding-top: 10px;
+            > table {
+                width: 90%;
+
+                tr {
+                }
+
+                th {
+                    > h3 {
+                        font-size: 16px;
+                        padding-top: 10px;
+                    }
+                }
+
+                td {
+                    font-size: 14px;
                 }
             }
+        }
 
-            td {
-                font-size: 14px;
-            }
+        .trait_droite {
+            @include right_line;
+        }
+
+        .trait_gauche {
+            @include left_line;
         }
     }
-
-    .trait_droite {
-        @include right_line;
-    }
-
-    .trait_gauche {
-        @include left_line;
-    }
-}

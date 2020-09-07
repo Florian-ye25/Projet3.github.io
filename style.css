@@ -60,6 +60,14 @@
 /* Rose de fond du menu du chic a la francaise */
 /* Beige de fond du menu de la note enchantee */
 /* Box shadow principal a utiliser pour les effets d'ombres sur differentes pages */
+.plat {
+  margin-left: 100px;
+}
+
+.prix {
+  margin-right: 100px;
+}
+
 /*  Proprietees de la page index.html*/
 .index {
   display: flex;
@@ -96,6 +104,17 @@
   background: #FFF5FE;
   font-family: "cmu_serifitalic";
   box-shadow: 0px 2px 5px #BDBDBD;
+  transition: transform 400ms;
+}
+.bloc:nth-child(2) .bloc_menudetail {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 400ms;
+  text-align: center;
+}
+.bloc:nth-child(2) .bloc_menudetail:hover {
+  transform: scale(1.15);
 }
 .bloc:nth-child(2) .bloc_menu h2, .bloc:nth-child(2) .bloc_menu h3 {
   background: linear-gradient(125deg, #905BFD 0%, #D8852E 90%);
@@ -106,6 +125,16 @@
   background: #F9F9F9;
   font-family: "cmu_serifitalic";
   box-shadow: 0px 2px 5px #BDBDBD;
+  transition: transform 400ms;
+}
+.bloc:nth-child(3) .bloc_menudetail {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 400ms;
+}
+.bloc:nth-child(3) .bloc_menudetail:hover {
+  transform: scale(1.15);
 }
 .bloc:nth-child(3) .bloc_menu h2, .bloc:nth-child(3) .bloc_menu h3 {
   background: linear-gradient(125deg, #103DE1 0%, #62B0F9 90%);
@@ -115,6 +144,16 @@
 .bloc:nth-child(4) .bloc_menu {
   font-family: "gasparregular";
   box-shadow: 0px 2px 5px #BDBDBD;
+  transition: transform 400ms;
+}
+.bloc:nth-child(4) .bloc_menudetail {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 400ms;
+}
+.bloc:nth-child(4) .bloc_menudetail:hover {
+  transform: scale(1.15);
 }
 .bloc:nth-child(4) .bloc_menu h2, .bloc:nth-child(4) .bloc_menu h3 {
   background: linear-gradient(125deg, #44983D 0%, #BFFF7E 90%);
@@ -268,12 +307,6 @@
 }
 .french_chic .menu > table {
   width: 80%;
-}
-.french_chic .menu > table tr > .plat {
-  margin-left: 25px;
-}
-.french_chic .menu > table tr > .prix {
-  margin-right: 25px;
 }
 .french_chic .menu > table th > h3 {
   font-size: 14px;
@@ -456,6 +489,10 @@ footer {
 }
 footer h2 {
   padding: 0px 15px 0px 15px;
+}
+
+.point_1 {
+  background-color: #FDCB46;
 }
 
 .cadre_rouge {
