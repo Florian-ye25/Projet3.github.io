@@ -68,6 +68,14 @@
   margin-right: 100px;
 }
 
+@keyframes points {
+  0% {
+    transform: scaleY(0vh);
+  }
+  100% {
+    transform: scaleY(-2vh);
+  }
+}
 /*  Proprietees de la page index.html*/
 .index {
   display: flex;
@@ -175,18 +183,25 @@
 }
 
 .next {
-  text-align: center;
   display: flex;
   justify-content: center;
+  align-items: center;
   padding-bottom: 0;
   margin-bottom: 5%;
 }
-.next h2 {
-  padding: 5px 0px 5px 0px;
-  width: 15%;
-  background: #579C87;
+.next-content {
+  border-radius: 15px;
+  margin: 2%;
+  width: 25%;
+  display: flex;
+  background-color: #579C87;
   color: #FDCB46;
-  border-radius: 5px;
+  justify-content: center;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.next h2 {
+  font-size: 30px;
 }
 
 /* Proprietees de la page lanoteenchantee.html */
@@ -491,8 +506,23 @@ footer h2 {
   padding: 0px 15px 0px 15px;
 }
 
-.point_1 {
+.point {
   background-color: #FDCB46;
+  height: 0.5vw;
+  width: 0.5vw;
+  border-radius: 20px;
+  transform: translateY(-2vh);
+  transition: transform 1000ms cubic-bezier(0, 0.8, 0.5, 0.99);
+  animation: point 1000ms cubic-bezier(0, 0.8, 0.5, 0.99);
+}
+.point--1 {
+  animation-delay: 333.3333333333ms;
+}
+.point--2 {
+  animation-delay: 666.6666666667ms;
+}
+.point--3 {
+  animation-delay: 1000ms;
 }
 
 .cadre_rouge {

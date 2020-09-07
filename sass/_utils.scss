@@ -76,3 +76,25 @@ $colorkey: #FCDFDB;
 .prix {
     margin-right: 100px;
 }
+
+$num-points: 3;
+$anim-dur: 1000ms;
+$anim-delay: $anim-dur / $num-points;
+
+@mixin point {
+    background-color: $yellow;
+    height: 0.5vw;
+    width: 0.5vw;
+    border-radius: 20px;
+    transform: translateY(-2vh);
+    transition: transform $anim-dur cubic-bezier(0,.8,.5,.99);
+}
+
+@keyframes points {
+    0% {
+        transform: scaleY(0vh);
+    }
+    100% {
+        transform: scaleY(-2vh);
+    }
+}

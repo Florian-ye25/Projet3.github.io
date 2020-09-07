@@ -27,7 +27,13 @@ header {
         }
     }
 
-    .point_1 {
-        background-color: $yellow;
+.point {
+    @include point;
+    animation: point $anim-dur cubic-bezier(0,.8,.5,.99);
 
+    @for $i from 1 through $num-points {
+        &--#{$i} {
+            animation-delay: $anim-delay * $i;
+        }
     }
+}
