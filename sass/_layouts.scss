@@ -11,25 +11,32 @@ header {
     }
 }
 
-    footer {
-        font-family: open_sanslight;
-        background: $green;
-        display: flex;
-        justify-content: space-between;
-        color: $yellow;
-        font-weight: normal;
-        position: fixed;
-        bottom: 0;
-        width: 99.2%;
+footer {
+    font-family: open_sanslight;
+    background: $green;
+    display: flex;
+    justify-content: space-between;
+    color: $yellow;
+    font-weight: normal;
+    position: fixed;
+    bottom: 0;
+    width: 99.2%;
 
-        h2 {
-            padding: 0px 15px 0px 15px;
-        }
+    h2 {
+        padding: 0px 15px 0px 15px;
+
+        &:hover {
+            animation: headshake 100ms cubic-bezier(.4,.1,.6,.9) 2;
+         }
+         }
     }
 
 .point {
-    @include point;
-    animation: point $anim-dur cubic-bezier(0,.8,.5,.99);
+    background-color: $yellow;
+    height: 0.5vw;
+    width: 0.5vw;
+    border-radius: 20px;
+    animation: points $anim-dur backwards infinite;
 
     @for $i from 1 through $num-points {
         &--#{$i} {
@@ -37,3 +44,98 @@ header {
         }
     }
 }
+
+.underline {
+    &_key {
+        text-decoration: none;
+        background: linear-gradient(to top, rgba(240, 83, 97, 0.5) 0%, rgba(240, 83, 97, 0.5) 4px, transparent 5px) no-repeat;
+        background-size: 0 100%;
+        transition: background-size 500ms;
+
+        &:hover {
+            background-size: 100% 100%;
+        }
+    }
+
+    &_chic {
+        &-top {
+            text-decoration: none;
+            background: linear-gradient(to top, rgba(198, 116, 18, 0.5) 0%, rgba(198, 116, 18, 0.5) 4px, transparent 5px) no-repeat;
+            background-size: 0 100%;
+            transition: background-size 500ms;
+
+            &:hover {
+                background-size: 100% 100%;
+            }
+        }
+
+        &-middle {
+            text-decoration: none;
+            background: linear-gradient(to top, rgba(165, 103, 153, 0.5) 0%, rgba(165, 103, 153, 0.5) 4px, transparent 5px) no-repeat;
+            background-size: 0 100%;
+            transition: background-size 500ms;
+
+            &:hover {
+                background-size: 100% 100%;
+            }
+        }
+
+        &-low {
+            text-decoration: none;
+            background: linear-gradient(to top, rgba(110, 76, 204, 0.5) 0%, rgba(110, 76, 204, 0.5) 4px, transparent 5px) no-repeat;
+            background-size: 0 100%;
+            transition: background-size 500ms;
+
+            &:hover {
+                background-size: 100% 100%;
+            }
+        }
+    }
+
+    &_delice {
+        &-top {
+            text-decoration: none;
+            background: linear-gradient(to top, rgba(16, 52, 222, 0.5) 0%, rgba(16, 52, 222, 0.5) 4px, transparent 5px) no-repeat;
+            background-size: 0 100%;
+            transition: background-size 500ms;
+
+            &:hover {
+                background-size: 100% 100%;
+            }
+        }
+
+        &-middle {
+            text-decoration: none;
+            background: linear-gradient(to top, rgba(6, 112, 243, 0.5) 0%, rgba(6, 112, 243, 0.5) 4px, transparent 5px) no-repeat;
+            background-size: 0 100%;
+            transition: background-size 500ms;
+
+            &:hover {
+                background-size: 100% 100%;
+            }
+        }
+
+        &-low {
+            text-decoration: none;
+            background: linear-gradient(to top, rgba(34, 157, 249, 0.5) 0%, rgba(34, 157, 249, 0.5) 4px, transparent 5px) no-repeat;
+            background-size: 0 100%;
+            transition: background-size 500ms;
+
+            &:hover {
+                background-size: 100% 100%;
+            }
+        }
+    }
+
+    &_taste {
+        text-decoration: none;
+        background: linear-gradient(to top, rgba(69, 153, 62, 0.5) 0%, rgba(69, 153, 62, 0.5) 4px, transparent 5px) no-repeat;
+        background-size: 0 100%;
+        transition: background-size 500ms;
+
+        &:hover {
+            background-size: 100% 100%;
+        }
+    }
+}
+

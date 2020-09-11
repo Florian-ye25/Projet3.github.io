@@ -68,12 +68,33 @@
   margin-right: 100px;
 }
 
-@keyframes points {
+@keyframes opacity {
   0% {
-    transform: scaleY(0vh);
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 0.75;
   }
   100% {
-    transform: scaleY(-2vh);
+    opacity: 1;
+  }
+}
+@keyframes points {
+  0% {
+    transform: translateY(-1vh);
+    animation-timing-function: cubic-bezier(0, 0.47, 0.58, 1);
+  }
+  50% {
+    transform: translateY(-2vh);
+    animation-timing-function: cubic-bezier(0, 0.26, 0, 0.59);
+  }
+}
+@keyframes headshake {
+  25% {
+    transform: translateX(3%);
+  }
+  75% {
+    transform: translateX(-3%);
   }
 }
 /*  Proprietees de la page index.html*/
@@ -107,6 +128,8 @@
 }
 .bloc:nth-child(1) .bloc_menudetail:hover {
   transform: scale(1.15);
+  animation: opacity 600ms ease-in;
+  animation-iteration-count: 1;
 }
 .bloc:nth-child(2) .bloc_menu {
   background: #FFF5FE;
@@ -123,6 +146,8 @@
 }
 .bloc:nth-child(2) .bloc_menudetail:hover {
   transform: scale(1.15);
+  animation: opacity 600ms ease-in;
+  animation-iteration-count: 1;
 }
 .bloc:nth-child(2) .bloc_menu h2, .bloc:nth-child(2) .bloc_menu h3 {
   background: linear-gradient(125deg, #905BFD 0%, #D8852E 90%);
@@ -143,6 +168,8 @@
 }
 .bloc:nth-child(3) .bloc_menudetail:hover {
   transform: scale(1.15);
+  animation: opacity 600ms ease-in;
+  animation-iteration-count: 1;
 }
 .bloc:nth-child(3) .bloc_menu h2, .bloc:nth-child(3) .bloc_menu h3 {
   background: linear-gradient(125deg, #103DE1 0%, #62B0F9 90%);
@@ -162,6 +189,8 @@
 }
 .bloc:nth-child(4) .bloc_menudetail:hover {
   transform: scale(1.15);
+  animation: opacity 600ms ease-in;
+  animation-iteration-count: 1;
 }
 .bloc:nth-child(4) .bloc_menu h2, .bloc:nth-child(4) .bloc_menu h3 {
   background: linear-gradient(125deg, #44983D 0%, #BFFF7E 90%);
@@ -505,15 +534,16 @@ footer {
 footer h2 {
   padding: 0px 15px 0px 15px;
 }
+footer h2:hover {
+  animation: headshake 100ms cubic-bezier(0.4, 0.1, 0.6, 0.9) 2;
+}
 
 .point {
   background-color: #FDCB46;
   height: 0.5vw;
   width: 0.5vw;
   border-radius: 20px;
-  transform: translateY(-2vh);
-  transition: transform 1000ms cubic-bezier(0, 0.8, 0.5, 0.99);
-  animation: point 1000ms cubic-bezier(0, 0.8, 0.5, 0.99);
+  animation: points 1000ms backwards infinite;
 }
 .point--1 {
   animation-delay: 333.3333333333ms;
@@ -523,6 +553,79 @@ footer h2 {
 }
 .point--3 {
   animation-delay: 1000ms;
+}
+
+.underline_key {
+  text-decoration: none;
+  background: linear-gradient(to top, rgba(240, 83, 97, 0.5) 0%, rgba(240, 83, 97, 0.5) 4px, transparent 5px) no-repeat;
+  background-size: 0 100%;
+  transition: background-size 500ms;
+}
+.underline_key:hover {
+  background-size: 100% 100%;
+}
+.underline_chic-top {
+  text-decoration: none;
+  background: linear-gradient(to top, rgba(198, 116, 18, 0.5) 0%, rgba(198, 116, 18, 0.5) 4px, transparent 5px) no-repeat;
+  background-size: 0 100%;
+  transition: background-size 500ms;
+}
+.underline_chic-top:hover {
+  background-size: 100% 100%;
+}
+.underline_chic-middle {
+  text-decoration: none;
+  background: linear-gradient(to top, rgba(165, 103, 153, 0.5) 0%, rgba(165, 103, 153, 0.5) 4px, transparent 5px) no-repeat;
+  background-size: 0 100%;
+  transition: background-size 500ms;
+}
+.underline_chic-middle:hover {
+  background-size: 100% 100%;
+}
+.underline_chic-low {
+  text-decoration: none;
+  background: linear-gradient(to top, rgba(110, 76, 204, 0.5) 0%, rgba(110, 76, 204, 0.5) 4px, transparent 5px) no-repeat;
+  background-size: 0 100%;
+  transition: background-size 500ms;
+}
+.underline_chic-low:hover {
+  background-size: 100% 100%;
+}
+.underline_delice-top {
+  text-decoration: none;
+  background: linear-gradient(to top, rgba(16, 52, 222, 0.5) 0%, rgba(16, 52, 222, 0.5) 4px, transparent 5px) no-repeat;
+  background-size: 0 100%;
+  transition: background-size 500ms;
+}
+.underline_delice-top:hover {
+  background-size: 100% 100%;
+}
+.underline_delice-middle {
+  text-decoration: none;
+  background: linear-gradient(to top, rgba(6, 112, 243, 0.5) 0%, rgba(6, 112, 243, 0.5) 4px, transparent 5px) no-repeat;
+  background-size: 0 100%;
+  transition: background-size 500ms;
+}
+.underline_delice-middle:hover {
+  background-size: 100% 100%;
+}
+.underline_delice-low {
+  text-decoration: none;
+  background: linear-gradient(to top, rgba(34, 157, 249, 0.5) 0%, rgba(34, 157, 249, 0.5) 4px, transparent 5px) no-repeat;
+  background-size: 0 100%;
+  transition: background-size 500ms;
+}
+.underline_delice-low:hover {
+  background-size: 100% 100%;
+}
+.underline_taste {
+  text-decoration: none;
+  background: linear-gradient(to top, rgba(69, 153, 62, 0.5) 0%, rgba(69, 153, 62, 0.5) 4px, transparent 5px) no-repeat;
+  background-size: 0 100%;
+  transition: background-size 500ms;
+}
+.underline_taste:hover {
+  background-size: 100% 100%;
 }
 
 .cadre_rouge {
