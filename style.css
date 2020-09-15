@@ -353,8 +353,9 @@
   width: 80%;
 }
 .french_chic .menu > table th > h3 {
+  height: 35%;
   font-size: 14px;
-  padding-top: 15px;
+  padding-top: 13px;
 }
 .french_chic .menu > table td {
   font-size: 14px;
@@ -493,8 +494,9 @@
   width: 90%;
 }
 .delice_papilles .menu > table th > h3 {
+  height: 35%;
   font-size: 16px;
-  padding-top: 10px;
+  padding-top: 12px;
 }
 .delice_papilles .menu > table td {
   font-size: 14px;
