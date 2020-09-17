@@ -33,7 +33,7 @@
 
                 &:hover {
                     transform: scale(1.15);
-                    animation: opacity 600ms ease-in;
+                    animation: opacity 400ms ease-in forwards;
                     animation-iteration-count: 1;
                 }
             }
@@ -56,7 +56,7 @@
 
                 &:hover {
                     transform: scale(1.15);
-                    animation: opacity 600ms ease-in;
+                    animation: opacity 400ms ease-in forwards;
                     animation-iteration-count: 1;
                 }
             }
@@ -84,7 +84,7 @@
 
                 &:hover {
                     transform: scale(1.15);
-                    animation: opacity 600ms ease-in;
+                    animation: opacity 400ms ease-in forwards;
                     animation-iteration-count: 1;
                 }
             }
@@ -111,7 +111,7 @@
 
                 &:hover {
                     transform: scale(1.15);
-                    animation: opacity 600ms ease-in;
+                    animation: opacity 400ms ease-in forwards;
                     animation-iteration-count: 1;
                 }
             }

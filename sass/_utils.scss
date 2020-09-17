@@ -13,6 +13,10 @@ $colorchic: #FFF5FE;
 /* Beige de fond du menu de la note enchantee */
 $colorkey: #FCDFDB;
 
+$num-points: 3;
+$anim-dur: 1000ms;
+$anim-delay: $anim-dur / $num-points;
+
 /* Box shadow principal a utiliser pour les effets d'ombres sur differentes pages */
 @mixin shadow-box {
     box-shadow: 0px 2px 5px #BDBDBD;
@@ -69,29 +73,15 @@ $colorkey: #FCDFDB;
         width: 100%;
     }
 
-.plat {
-    margin-left: 100px;
-}
-
-.prix {
-    margin-right: 100px;
-}
-
 @keyframes opacity {
     0% {
-        opacity: 0.50;
-    }
-    50% {
-        opacity: 0.75;
-    }
-    100% {
         opacity: 1;
     }
-}
 
-$num-points: 3;
-$anim-dur: 1000ms;
-$anim-delay: $anim-dur / $num-points;
+    100% {
+        opacity: 0.75;
+    }
+}
 
 @keyframes points {
     0% {
