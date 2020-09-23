@@ -1,48 +1,7 @@
-header {
-    font-family: 'kanitregular';
-    font-size: 24px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    background: $green;
-
-    h1 {
-        color: $yellow;
-    }
-}
-
-footer {
-    font-family: open_sanslight;
-    background: $green;
-    display: flex;
-    justify-content: space-between;
-    color: $yellow;
-    font-weight: normal;
-    position: fixed;
-    bottom: 0;
-    width: 99.2%;
-
-    h2 {
-        padding: 0px 15px 0px 15px;
-
-        &:hover {
-            animation: headshake 100ms cubic-bezier(.4,.1,.6,.9) 2;
-         }
-         }
-    }
-
-.point {
-    background-color: $yellow;
-    height: 0.5vw;
-    width: 0.5vw;
-    border-radius: 20px;
-    animation: points $anim-dur backwards infinite;
-
-    @for $i from 1 through $num-points {
-        &--#{$i} {
-            animation-delay: $anim-delay * $i;
-        }
-    }
+.fa-music {
+    background: linear-gradient(125deg, #F05060 0%, #F6916A 90%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .underline {

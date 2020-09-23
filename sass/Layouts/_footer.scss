@@ -1,0 +1,19 @@
+footer {
+    font-family: open_sanslight;
+    background: $green;
+    display: flex;
+    justify-content: space-between;
+    color: $yellow;
+    font-weight: normal;
+    position: fixed;
+    bottom: 0;
+    width: 99.2%;
+
+    h2 {
+        padding: 0px 15px 0px 15px;
+
+        &:hover {
+            animation: headshake 100ms cubic-bezier(.4,.1,.6,.9) 2;
+        }
+    }
+}

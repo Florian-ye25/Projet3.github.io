@@ -1,0 +1,181 @@
+/*  Proprietees de la page index.html*/
+
+.index {
+	display: flex;
+	justify-content: center;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	margin: 50px 35% 25px 35%;
+}
+
+.bloc {
+	width: 45%;
+
+	a {
+		text-decoration: none;
+	}
+
+	&:nth-child(1) {
+
+		.bloc_menu {
+			background: $colorkey;
+			color: black;
+			font-family: 'caveatbold';
+			@include shadow-box;
+			margin-bottom: 25px;
+			transition: transform 400ms;
+
+			&detail {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				transition: transform 400ms;
+
+				&:hover {
+					transform: scale(1.15);
+					animation: opacity 400ms ease-in forwards;
+					animation-iteration-count: 1;
+				}
+			}
+		}
+	}
+
+	&:nth-child(2) {
+		.bloc_menu {
+			background: #FFF5FE;
+			font-family: 'cmu_serifitalic';
+			@include shadow-box;
+			transition: transform 400ms;
+
+			&detail {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				transition: transform 400ms;
+				text-align: center;
+
+				&:hover {
+					transform: scale(1.15);
+					animation: opacity 400ms ease-in forwards;
+					animation-iteration-count: 1;
+				}
+			}
+
+			h2, h3 {
+				background: linear-gradient(125deg, #905BFD 0%, #D8852E 90%);
+				-webkit-background-clip: text;
+				-webkit-text-fill-color: transparent;
+			}
+		}
+	}
+
+	&:nth-child(3) {
+		.bloc_menu {
+			background: #F9F9F9;
+			font-family: 'cmu_serifitalic';
+			@include shadow-box;
+			transition: transform 400ms;
+
+			&detail {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				text-align: center;
+				transition: transform 400ms;
+
+				&:hover {
+					transform: scale(1.15);
+					animation: opacity 400ms ease-in forwards;
+					animation-iteration-count: 1;
+				}
+			}
+
+			h2, h3 {
+				background: linear-gradient(125deg, #103DE1 0%, #62B0F9 90%);
+				-webkit-background-clip: text;
+				-webkit-text-fill-color: transparent;
+			}
+		}
+	}
+
+	&:nth-child(4) {
+		.bloc_menu {
+			font-family: 'gasparregular';
+			@include shadow-box;
+			transition: transform 400ms;
+
+			&detail {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				transition: transform 400ms;
+
+				&:hover {
+					transform: scale(1.15);
+					animation: opacity 400ms ease-in forwards;
+					animation-iteration-count: 1;
+				}
+			}
+
+			h2, h3 {
+				background: linear-gradient(125deg, #44983D 0%, #BFFF7E 90%);
+				-webkit-background-clip: text;
+				-webkit-text-fill-color: transparent;
+			}
+		}
+	}
+
+	&_menu {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		height: 14vw;
+
+		h3 {
+			margin: 0px;
+		}
+
+		img {
+			width: 20%;
+		}
+	}
+}
+
+.next {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-bottom: 0;
+	margin-bottom: 5%;
+
+	&-content {
+		border-radius: 15px;
+		margin: 2%;
+		width: 25%;
+		display: flex;
+		background-color: $green;
+		color: $yellow;
+		justify-content: center;
+		justify-content: space-evenly;
+		align-items: center;
+
+		.point {
+			background-color: $yellow;
+			height: 0.5vw;
+			width: 0.5vw;
+			border-radius: 20px;
+			animation: points $anim-dur backwards infinite;
+
+			@for $i from 1 through $num-points {
+				&--#{$i} {
+					animation-delay: $anim-delay * $i;
+				}
+			}
+		}
+	}
+
+	h2 {
+		font-size: 30px;
+	}
+}

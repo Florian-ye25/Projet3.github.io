@@ -1,11 +1,18 @@
-﻿@import "sass/base","sass/utils","sass/composants", "sass/layouts";
+﻿@import "sass/base/polices";
+@import "sass/base/normes";
 
-.cadre_rouge {
-    border: 1px solid red;
-}
+@import "sass/utils/keyframes";
+@import "sass/utils/mixins";
+@import "sass/utils/variables";
 
-body {
-    display: flex;
-    flex-direction: column; 
-}
+@import "sass/composants";
 
+@import "sass/layouts/blocs";
+@import "sass/layouts/footer";
+@import "sass/layouts/header";
+
+@import "sass/pages/index";
+@import "sass/pages/la_palette_du_gout";
+@import "sass/pages/lanoteenchantee";
+@import "sass/pages/le_chic_a_la_francaise";
+@import "sass/pages/le_delice_des_papilles";

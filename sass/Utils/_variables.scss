@@ -1,0 +1,22 @@
+/* Vert principalement utilise pour mon header et footer */
+$green: #579C87;
+
+/* Jaune de mon logo ohmyfood */
+$yellow: #FDCB46;
+
+/* Couleur de fond du menu le delice des papilles*/
+$colordelice: #EDEFEF;
+
+/* Rose de fond du menu du chic a la francaise */
+$colorchic: #FFF5FE;
+
+/* Beige de fond du menu de la note enchantee */
+$colorkey: #FCDFDB;
+
+/*Variable concernant le keyframe point*/
+$num-points: 3;
+$anim-dur: 1000ms;
+$anim-delay: $anim-dur / $num-points;
+
+/*Variable concernant le keyframe headshake*/
+$shake-intensity: 3%;

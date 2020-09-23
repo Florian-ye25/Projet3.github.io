@@ -1,0 +1,33 @@
+@keyframes opacity {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0.75;
+    }
+}
+
+@keyframes points {
+    0% {
+        transform: translateY(-1.0vh);
+        animation-timing-function: cubic-bezier(0,.47,.58,1);
+    }
+
+    50% {
+        transform: translateY(-2vh);
+        animation-timing-function: cubic-bezier(0,.26,0,.59);
+    }
+}
+
+@keyframes headshake {
+    25% {
+        // a droite
+        transform: translateX($shake-intensity);
+    }
+
+    75% {
+        //  a gauche
+        transform: translateX($shake-intensity * -1);
+    }
+}

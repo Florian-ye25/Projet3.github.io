@@ -1,0 +1,51 @@
+/* Proprietees de la page le delice des papilles */
+.delice_papilles {
+    > .main_title {
+        @include main_title;
+    }
+
+    .menu {
+        @include menu;
+        padding: 50px 0 50px 0;
+        font-family: 'cmu_serifitalic';
+        font-weight: bold;
+        padding-bottom: 10%;
+        background: $colordelice;
+
+        &_title {
+            font-size: 50px;
+            margin: 10% 0 10% 0px;
+            background: linear-gradient(125deg, #103DE1 0%, #62B0F9 90%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        > table {
+            width: 90%;
+
+            tr {
+            }
+
+            th {
+                > h3 {
+                    height: 35%;
+                    font-size: 16px;
+                    padding-top: 12px;
+                    text-align: center;
+                }
+            }
+
+            td {
+                font-size: 14px;
+            }
+        }
+    }
+
+    .trait_droite {
+        @include right_line;
+    }
+
+    .trait_gauche {
+        @include left_line;
+    }
+}

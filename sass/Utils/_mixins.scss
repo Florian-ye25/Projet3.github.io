@@ -1,0 +1,55 @@
+/* Box shadow principal a utiliser pour les effets d'ombres sur differentes pages */
+@mixin shadow-box {
+    box-shadow: 0px 2px 5px #BDBDBD;
+}
+
+@mixin main_title {
+    font-family: 'open_sansregular';
+    font-size: 30px;
+    text-align: center;
+}
+
+@mixin menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 25% 7% 25%;
+    @include shadow-box;
+
+    > table {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        text-align: left;
+
+
+        tr {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 15px;
+        }
+
+        th {
+            > p {
+                width: 35%;
+            }
+
+            font-size: 24px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            justify-content: space-between;
+        }
+    }
+}
+
+@mixin right_line {
+    transform: scaleX(-1);
+    padding-right: 5px;
+    width: 100%;
+}
+
+@mixin left_line {
+    width: 100%;
+}
