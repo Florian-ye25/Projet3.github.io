@@ -1,3 +1,37 @@
+/* Vert principalement utilise pour mon header et footer */
+/* Jaune de mon logo ohmyfood */
+/* Couleur de fond du menu le delice des papilles*/
+/* Rose de fond du menu du chic a la francaise */
+/* Beige de fond du menu de la note enchantee */
+/*Variable concernant le keyframe point*/
+/*Variable concernant le keyframe headshake*/
+@keyframes opacity {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.75;
+  }
+}
+@keyframes points {
+  0% {
+    transform: translateY(-1vh);
+    animation-timing-function: cubic-bezier(0, 0.47, 0.58, 1);
+  }
+  50% {
+    transform: translateY(-2vh);
+    animation-timing-function: cubic-bezier(0, 0.26, 0, 0.59);
+  }
+}
+@keyframes headshake {
+  25% {
+    transform: translateX(3%);
+  }
+  75% {
+    transform: translateX(-3%);
+  }
+}
+/* Box shadow principal a utiliser pour les effets d'ombres sur differentes pages */
 @font-face {
   font-family: "open_sansregular";
   src: url("Polices/webfonts/opensans_regular_macroman/OpenSans-Regular-webfont.eot");
@@ -54,38 +88,132 @@
   font-weight: normal;
   font-style: normal;
 }
-/* Vert principalement utilise pour mon header et footer */
-/* Jaune de mon logo ohmyfood */
-/* Couleur de fond du menu le delice des papilles*/
-/* Rose de fond du menu du chic a la francaise */
-/* Beige de fond du menu de la note enchantee */
-/* Box shadow principal a utiliser pour les effets d'ombres sur differentes pages */
-@keyframes opacity {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0.75;
-  }
+.cadre_rouge {
+  border: 1px solid red;
 }
-@keyframes points {
-  0% {
-    transform: translateY(-1vh);
-    animation-timing-function: cubic-bezier(0, 0.47, 0.58, 1);
-  }
-  50% {
-    transform: translateY(-2vh);
-    animation-timing-function: cubic-bezier(0, 0.26, 0, 0.59);
-  }
+
+body {
+  display: flex;
+  flex-direction: column;
 }
-@keyframes headshake {
-  25% {
-    transform: translateX(3%);
-  }
-  75% {
-    transform: translateX(-3%);
-  }
+
+.fa-music {
+  background: linear-gradient(125deg, #F05060 0%, #F6916A 90%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
+
+.underline_key {
+  text-decoration: none;
+  background: linear-gradient(to top, rgba(240, 83, 97, 0.5) 0%, rgba(240, 83, 97, 0.5) 4px, transparent 5px) no-repeat;
+  background-size: 0 100%;
+  transition: background-size 500ms;
+}
+.underline_key:hover {
+  background-size: 100% 100%;
+}
+.underline_chic-top {
+  text-decoration: none;
+  background: linear-gradient(to top, rgba(198, 116, 18, 0.5) 0%, rgba(198, 116, 18, 0.5) 4px, transparent 5px) no-repeat;
+  background-size: 0 100%;
+  transition: background-size 500ms;
+}
+.underline_chic-top:hover {
+  background-size: 100% 100%;
+}
+.underline_chic-middle {
+  text-decoration: none;
+  background: linear-gradient(to top, rgba(165, 103, 153, 0.5) 0%, rgba(165, 103, 153, 0.5) 4px, transparent 5px) no-repeat;
+  background-size: 0 100%;
+  transition: background-size 500ms;
+}
+.underline_chic-middle:hover {
+  background-size: 100% 100%;
+}
+.underline_chic-low {
+  text-decoration: none;
+  background: linear-gradient(to top, rgba(110, 76, 204, 0.5) 0%, rgba(110, 76, 204, 0.5) 4px, transparent 5px) no-repeat;
+  background-size: 0 100%;
+  transition: background-size 500ms;
+}
+.underline_chic-low:hover {
+  background-size: 100% 100%;
+}
+.underline_delice-top {
+  text-decoration: none;
+  background: linear-gradient(to top, rgba(16, 52, 222, 0.5) 0%, rgba(16, 52, 222, 0.5) 4px, transparent 5px) no-repeat;
+  background-size: 0 100%;
+  transition: background-size 500ms;
+}
+.underline_delice-top:hover {
+  background-size: 100% 100%;
+}
+.underline_delice-middle {
+  text-decoration: none;
+  background: linear-gradient(to top, rgba(6, 112, 243, 0.5) 0%, rgba(6, 112, 243, 0.5) 4px, transparent 5px) no-repeat;
+  background-size: 0 100%;
+  transition: background-size 500ms;
+}
+.underline_delice-middle:hover {
+  background-size: 100% 100%;
+}
+.underline_delice-low {
+  text-decoration: none;
+  background: linear-gradient(to top, rgba(34, 157, 249, 0.5) 0%, rgba(34, 157, 249, 0.5) 4px, transparent 5px) no-repeat;
+  background-size: 0 100%;
+  transition: background-size 500ms;
+}
+.underline_delice-low:hover {
+  background-size: 100% 100%;
+}
+.underline_taste {
+  text-decoration: none;
+  background: linear-gradient(to top, rgba(69, 153, 62, 0.5) 0%, rgba(69, 153, 62, 0.5) 4px, transparent 5px) no-repeat;
+  background-size: 0 100%;
+  transition: background-size 500ms;
+}
+.underline_taste:hover {
+  background-size: 100% 100%;
+}
+
+.plat {
+  margin-left: 100px;
+}
+
+.prix {
+  margin-right: 100px;
+}
+
+footer {
+  font-family: open_sanslight;
+  background: #579C87;
+  display: flex;
+  justify-content: space-between;
+  color: #FDCB46;
+  font-weight: normal;
+  position: fixed;
+  bottom: 0;
+  width: 99.2%;
+}
+footer h2 {
+  padding: 0px 15px 0px 15px;
+}
+footer h2:hover {
+  animation: headshake 100ms cubic-bezier(0.4, 0.1, 0.6, 0.9) 2;
+}
+
+header {
+  font-family: "kanitregular";
+  font-size: 24px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background: #579C87;
+}
+header h1 {
+  color: #FDCB46;
+}
+
 /*  Proprietees de la page index.html*/
 .index {
   display: flex;
@@ -100,45 +228,35 @@
 }
 .bloc a {
   text-decoration: none;
+  transition: transform 400ms;
+}
+.bloc_menu {
+  box-shadow: 0px 2px 5px #BDBDBD;
+  transition: transform 400ms;
+}
+.bloc_menu--detail {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: transform 400ms;
+}
+.bloc_menu--detail:hover {
+  transform: scale(1.15);
+  animation: opacity 400ms ease-in forwards;
+  animation-iteration-count: 1;
 }
 .bloc:nth-child(1) .bloc_menu {
   background: #FCDFDB;
   color: black;
   font-family: "caveatbold";
-  box-shadow: 0px 2px 5px #BDBDBD;
   margin-bottom: 25px;
-  transition: transform 400ms;
-}
-.bloc:nth-child(1) .bloc_menudetail {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  transition: transform 400ms;
-}
-.bloc:nth-child(1) .bloc_menudetail:hover {
-  transform: scale(1.15);
-  animation: opacity 400ms ease-in forwards;
-  animation-iteration-count: 1;
 }
 .bloc:nth-child(2) .bloc_menu {
   background: #FFF5FE;
   font-family: "cmu_serifitalic";
-  box-shadow: 0px 2px 5px #BDBDBD;
-  transition: transform 400ms;
 }
-.bloc:nth-child(2) .bloc_menudetail {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  transition: transform 400ms;
-  text-align: center;
-}
-.bloc:nth-child(2) .bloc_menudetail:hover {
-  transform: scale(1.15);
-  animation: opacity 400ms ease-in forwards;
-  animation-iteration-count: 1;
-}
-.bloc:nth-child(2) .bloc_menu h2, .bloc:nth-child(2) .bloc_menu h3 {
+.bloc:nth-child(2) h2, .bloc:nth-child(2) h3 {
   background: linear-gradient(125deg, #905BFD 0%, #D8852E 90%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -146,20 +264,6 @@
 .bloc:nth-child(3) .bloc_menu {
   background: #F9F9F9;
   font-family: "cmu_serifitalic";
-  box-shadow: 0px 2px 5px #BDBDBD;
-  transition: transform 400ms;
-}
-.bloc:nth-child(3) .bloc_menudetail {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  transition: transform 400ms;
-}
-.bloc:nth-child(3) .bloc_menudetail:hover {
-  transform: scale(1.15);
-  animation: opacity 400ms ease-in forwards;
-  animation-iteration-count: 1;
 }
 .bloc:nth-child(3) .bloc_menu h2, .bloc:nth-child(3) .bloc_menu h3 {
   background: linear-gradient(125deg, #103DE1 0%, #62B0F9 90%);
@@ -168,19 +272,6 @@
 }
 .bloc:nth-child(4) .bloc_menu {
   font-family: "gasparregular";
-  box-shadow: 0px 2px 5px #BDBDBD;
-  transition: transform 400ms;
-}
-.bloc:nth-child(4) .bloc_menudetail {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  transition: transform 400ms;
-}
-.bloc:nth-child(4) .bloc_menudetail:hover {
-  transform: scale(1.15);
-  animation: opacity 400ms ease-in forwards;
-  animation-iteration-count: 1;
 }
 .bloc:nth-child(4) .bloc_menu h2, .bloc:nth-child(4) .bloc_menu h3 {
   background: linear-gradient(125deg, #44983D 0%, #BFFF7E 90%);
@@ -200,15 +291,14 @@
 .bloc_menu img {
   width: 20%;
 }
-
-.next {
+.bloc .next {
   display: flex;
   justify-content: center;
   align-items: center;
   padding-bottom: 0;
   margin-bottom: 5%;
 }
-.next-content {
+.bloc .next-content {
   border-radius: 15px;
   margin: 2%;
   width: 25%;
@@ -219,8 +309,90 @@
   justify-content: space-evenly;
   align-items: center;
 }
-.next h2 {
+.bloc .next-content .point {
+  background-color: #FDCB46;
+  height: 0.5vw;
+  width: 0.5vw;
+  border-radius: 20px;
+  animation: points 1000ms backwards infinite;
+}
+.bloc .next-content .point--1 {
+  animation-delay: 333.3333333333ms;
+}
+.bloc .next-content .point--2 {
+  animation-delay: 666.6666666667ms;
+}
+.bloc .next-content .point--3 {
+  animation-delay: 1000ms;
+}
+.bloc .next h2 {
   font-size: 30px;
+}
+
+/* Proprietees de la page la palette du gout */
+.palette_du_gout > .main_title {
+  font-family: "open_sansregular";
+  font-size: 30px;
+  text-align: center;
+}
+.palette_du_gout .menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 25% 7% 25%;
+  box-shadow: 0px 2px 5px #BDBDBD;
+  padding: 50px 0 50px 0;
+  font-family: "gasparitalic";
+  font-weight: bold;
+  padding-bottom: 10%;
+}
+.palette_du_gout .menu > table {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: left;
+}
+.palette_du_gout .menu > table tr {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+.palette_du_gout .menu > table th {
+  font-size: 24px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  justify-content: space-between;
+}
+.palette_du_gout .menu > table th > p {
+  width: 35%;
+}
+.palette_du_gout .menu_title {
+  font-size: 50px;
+  margin: 10% 0 10% 0px;
+  background: linear-gradient(125deg, #44983D 0%, #BFFF7E 90%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.palette_du_gout .menu > table {
+  width: 90%;
+}
+.palette_du_gout .menu > table th > h3 {
+  font-size: 16px;
+  padding-top: 10px;
+  text-align: center;
+}
+.palette_du_gout .menu > table td {
+  font-size: 14px;
+}
+.palette_du_gout .trait_droite {
+  transform: scaleX(-1);
+  padding-right: 5px;
+  width: 100%;
+}
+.palette_du_gout .trait_gauche {
+  width: 100%;
 }
 
 /* Proprietees de la page lanoteenchantee.html */
@@ -373,72 +545,6 @@
   width: 100%;
 }
 
-/* Proprietees de la page la palette du gout */
-.palette_du_gout > .main_title {
-  font-family: "open_sansregular";
-  font-size: 30px;
-  text-align: center;
-}
-.palette_du_gout .menu {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: 0 25% 7% 25%;
-  box-shadow: 0px 2px 5px #BDBDBD;
-  padding: 50px 0 50px 0;
-  font-family: "gasparitalic";
-  font-weight: bold;
-  padding-bottom: 10%;
-}
-.palette_du_gout .menu > table {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  text-align: left;
-}
-.palette_du_gout .menu > table tr {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 15px;
-}
-.palette_du_gout .menu > table th {
-  font-size: 24px;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  justify-content: space-between;
-}
-.palette_du_gout .menu > table th > p {
-  width: 35%;
-}
-.palette_du_gout .menu_title {
-  font-size: 50px;
-  margin: 10% 0 10% 0px;
-  background: linear-gradient(125deg, #44983D 0%, #BFFF7E 90%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-.palette_du_gout .menu > table {
-  width: 90%;
-}
-.palette_du_gout .menu > table th > h3 {
-  font-size: 16px;
-  padding-top: 10px;
-  text-align: center;
-}
-.palette_du_gout .menu > table td {
-  font-size: 14px;
-}
-.palette_du_gout .trait_droite {
-  transform: scaleX(-1);
-  padding-right: 5px;
-  width: 100%;
-}
-.palette_du_gout .trait_gauche {
-  width: 100%;
-}
-
 /* Proprietees de la page le delice des papilles */
 .delice_papilles > .main_title {
   font-family: "open_sansregular";
@@ -456,7 +562,7 @@
   font-family: "cmu_serifitalic";
   font-weight: bold;
   padding-bottom: 10%;
-  background: #EDEFEF;
+  background: #F9F9F9;
 }
 .delice_papilles .menu > table {
   display: flex;
@@ -505,150 +611,6 @@
 }
 .delice_papilles .trait_gauche {
   width: 100%;
-}
-
-/* Propietees des medias queries */
-header {
-  font-family: "kanitregular";
-  font-size: 24px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  background: #579C87;
-}
-header h1 {
-  color: #FDCB46;
-}
-
-footer {
-  font-family: open_sanslight;
-  background: #579C87;
-  display: flex;
-  justify-content: space-between;
-  color: #FDCB46;
-  font-weight: normal;
-  position: fixed;
-  bottom: 0;
-  width: 99.2%;
-}
-footer h2 {
-  padding: 0px 15px 0px 15px;
-}
-footer h2:hover {
-  animation: headshake 100ms cubic-bezier(0.4, 0.1, 0.6, 0.9) 2;
-}
-
-.fa-music {
-  background: linear-gradient(125deg, #F05060 0%, #F6916A 90%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.point {
-  background-color: #FDCB46;
-  height: 0.5vw;
-  width: 0.5vw;
-  border-radius: 20px;
-  animation: points 1000ms backwards infinite;
-}
-.point--1 {
-  animation-delay: 333.3333333333ms;
-}
-.point--2 {
-  animation-delay: 666.6666666667ms;
-}
-.point--3 {
-  animation-delay: 1000ms;
-}
-
-.underline_key {
-  text-decoration: none;
-  background: linear-gradient(to top, rgba(240, 83, 97, 0.5) 0%, rgba(240, 83, 97, 0.5) 4px, transparent 5px) no-repeat;
-  background-size: 0 100%;
-  transition: background-size 500ms;
-}
-.underline_key:hover {
-  background-size: 100% 100%;
-}
-.underline_chic-top {
-  text-decoration: none;
-  background: linear-gradient(to top, rgba(198, 116, 18, 0.5) 0%, rgba(198, 116, 18, 0.5) 4px, transparent 5px) no-repeat;
-  background-size: 0 100%;
-  transition: background-size 500ms;
-}
-.underline_chic-top:hover {
-  background-size: 100% 100%;
-}
-.underline_chic-middle {
-  text-decoration: none;
-  background: linear-gradient(to top, rgba(165, 103, 153, 0.5) 0%, rgba(165, 103, 153, 0.5) 4px, transparent 5px) no-repeat;
-  background-size: 0 100%;
-  transition: background-size 500ms;
-}
-.underline_chic-middle:hover {
-  background-size: 100% 100%;
-}
-.underline_chic-low {
-  text-decoration: none;
-  background: linear-gradient(to top, rgba(110, 76, 204, 0.5) 0%, rgba(110, 76, 204, 0.5) 4px, transparent 5px) no-repeat;
-  background-size: 0 100%;
-  transition: background-size 500ms;
-}
-.underline_chic-low:hover {
-  background-size: 100% 100%;
-}
-.underline_delice-top {
-  text-decoration: none;
-  background: linear-gradient(to top, rgba(16, 52, 222, 0.5) 0%, rgba(16, 52, 222, 0.5) 4px, transparent 5px) no-repeat;
-  background-size: 0 100%;
-  transition: background-size 500ms;
-}
-.underline_delice-top:hover {
-  background-size: 100% 100%;
-}
-.underline_delice-middle {
-  text-decoration: none;
-  background: linear-gradient(to top, rgba(6, 112, 243, 0.5) 0%, rgba(6, 112, 243, 0.5) 4px, transparent 5px) no-repeat;
-  background-size: 0 100%;
-  transition: background-size 500ms;
-}
-.underline_delice-middle:hover {
-  background-size: 100% 100%;
-}
-.underline_delice-low {
-  text-decoration: none;
-  background: linear-gradient(to top, rgba(34, 157, 249, 0.5) 0%, rgba(34, 157, 249, 0.5) 4px, transparent 5px) no-repeat;
-  background-size: 0 100%;
-  transition: background-size 500ms;
-}
-.underline_delice-low:hover {
-  background-size: 100% 100%;
-}
-.underline_taste {
-  text-decoration: none;
-  background: linear-gradient(to top, rgba(69, 153, 62, 0.5) 0%, rgba(69, 153, 62, 0.5) 4px, transparent 5px) no-repeat;
-  background-size: 0 100%;
-  transition: background-size 500ms;
-}
-.underline_taste:hover {
-  background-size: 100% 100%;
-}
-
-.plat {
-  margin-left: 100px;
-}
-
-.prix {
-  margin-right: 100px;
-}
-
-.cadre_rouge {
-  border: 1px solid red;
-}
-
-body {
-  display: flex;
-  flex-direction: column;
 }
 
 /*# sourceMappingURL=style.css.map */

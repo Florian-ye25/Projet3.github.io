@@ -19,6 +19,7 @@
         animation-timing-function: cubic-bezier(0,.26,0,.59);
     }
 }
+$shake-intensity: 3%;
 
 @keyframes headshake {
     25% {
