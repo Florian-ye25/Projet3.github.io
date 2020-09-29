@@ -253,7 +253,7 @@ header h1 {
   -webkit-text-fill-color: transparent;
 }
 .bloc:nth-child(3) .bloc_menu {
-  background: #F9F9F9;
+  background: #EDEFEF;
   font-family: "cmu_serifitalic";
 }
 .bloc:nth-child(3) .bloc_menu h2, .bloc:nth-child(3) .bloc_menu h3 {
@@ -570,7 +570,7 @@ header h1 {
   font-family: "cmu_serifitalic";
   font-weight: bold;
   padding-bottom: 10%;
-  background: #F9F9F9;
+  background: #EDEFEF;
 }
 .delice_papilles .menu > table {
   display: flex;
