@@ -88,10 +88,6 @@
   font-weight: normal;
   font-style: normal;
 }
-.cadre_rouge {
-  border: 1px solid red;
-}
-
 body {
   display: flex;
   flex-direction: column;
