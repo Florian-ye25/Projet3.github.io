@@ -48,4 +48,14 @@
     .trait_gauche {
         @include left_line;
     }
+
+    .plat {
+        margin-left: 75px;
+    }
+
+    .prix {
+        margin-right: 75px;
+        display: flex;
+        align-items: center;
+    }
 }

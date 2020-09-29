@@ -1,0 +1,140 @@
+@media screen and (min-width: 1200px) and (max-width: 1440px) {
+    .index {
+        margin: 50px 15% 50px 15%;
+
+        .bloc_menu {
+            height: 26vw;
+            font-size: 20px;
+
+            i {
+                font-size: 2.8vw;
+            }
+        }
+    }
+
+    .next {
+        margin-bottom: 6%;
+
+        &-content {
+            width: 28%;
+        }
+
+        h2 {
+            font-size: 26px;
+        }
+    }
+
+    .note_enchantee {
+        .main_title {
+            font-size: 30px;
+        }
+
+        .menu {
+            margin: 0 15% 10% 15%;
+
+            table {
+                h3 {
+                    font-size: 34px;
+                }
+
+                td {
+                    font-size: 26px;
+                }
+
+                th {
+                    > p {
+                        width: 30%;
+                    }
+                }
+            }
+        }
+
+        h4 {
+            font-size: 38px;
+        }
+    }
+
+    .french_chic {
+        .main_title {
+            font-size: 30px;
+        }
+
+        .menu {
+            margin: 0 15% 10% 15%;
+
+            > table {
+                th {
+                    h3 {
+                        font-size: 22px;
+                        padding-top: 0;
+                        height: auto;
+                    }
+
+                    > p {
+                        width: 30%;
+                    }
+                }
+
+                td {
+                    font-size: 17px;
+                }
+            }
+        }
+    }
+
+    .delice_papilles {
+        .main_title {
+            font-size: 30px;
+        }
+
+        .menu {
+            margin: 0 15% 10% 15%;
+
+            > table {
+                th {
+                    h3 {
+                        font-size: 23px;
+                        padding-top: 0;
+                        height: auto;
+                    }
+
+                    p {
+                        width: 30%;
+                    }
+                }
+
+                td {
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+
+    .palette_du_gout {
+        .main_title {
+            font-size: 30px;
+        }
+
+        .menu {
+            margin: 0 15% 10% 15%;
+
+            > table {
+                th {
+                    h3 {
+                        font-size: 23px;
+                        padding-top: 0;
+                        height: auto;
+                    }
+
+                    p {
+                        width: 38%;
+                    }
+                }
+
+                td {
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+}

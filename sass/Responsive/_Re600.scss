@@ -1,0 +1,165 @@
+@media screen and (min-width: 600px) and (max-width: 768px) {
+	.index {
+		margin: 50px 0 50px 0;
+
+		.bloc_menu {
+			height: 44vw;
+			font-size: 20px;
+
+			i {
+				font-size: 5vw;
+			}
+		}
+	}
+
+	.next {
+		margin-bottom: 13%;
+
+		&-content {
+			width: 45%;
+
+			.point {	
+				height: 0.9vw;
+				width: 0.9vw;
+			}
+		}
+
+		h2 {
+			font-size: 26px;
+		}
+	}
+
+	.note_enchantee {
+		.main_title {
+			font-size: 24px;
+		}
+
+		.fa-music_top-img {
+			font-size: 50px;
+		}
+
+		.menu {
+			margin: 0 2% 16% 2%;
+
+			table {
+				width: 90%;
+
+				h3 {
+					font-size: 30px;
+				}
+
+				td {
+					font-size: 22px;
+				}
+
+				th {
+					> p {
+						width: 28%;
+					}
+				}
+			}
+		}
+
+		h4 {
+			font-size: 30px;
+		}
+	}
+
+	.french_chic {
+		.main_title {
+			font-size: 24px;
+		}
+
+		.menu {
+			margin: 0 2% 16% 2%;
+
+			> table {
+				width: 93%;
+
+				th {
+					h3 {
+						font-size: 18px;
+						padding-top: 10px;
+						height: auto;
+					}
+
+					> p {
+						width: 28%;
+					}
+				}
+
+				td {
+					font-size: 16px;
+				}
+			}
+		}
+	}
+
+	.delice_papilles {
+		.main_title {
+			font-size: 24px;
+		}
+
+		.menu {
+			margin: 0 2% 16% 2%;
+
+			&_title {
+				font-size: 40px;
+			}
+
+			> table {
+				width: 93%;
+
+				th {
+					h3 {
+						font-size: 21px;
+						padding-top: 0;
+						height: auto;
+					}
+
+					p {
+						width: 28%;
+					}
+				}
+
+				td {
+					font-size: 18px;
+				}
+			}
+		}
+	}
+
+	.palette_du_gout {
+		.main_title {
+			font-size: 24px;
+		}
+
+		.menu {
+			margin: 0 2% 16% 2%;
+
+			&_title {
+				font-size: 40px;
+			}
+
+			> table {
+				width: 93%;
+
+				th {
+					h3 {
+						font-size: 21px;
+						padding-top: 0;
+						height: auto;
+					}
+
+					p {
+						width: 34%;
+					}
+				}
+
+				td {
+					font-size: 18px;
+				}
+			}
+		}
+	}
+}

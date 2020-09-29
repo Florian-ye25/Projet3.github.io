@@ -176,14 +176,6 @@ body {
   background-size: 100% 100%;
 }
 
-.plat {
-  margin-left: 100px;
-}
-
-.prix {
-  margin-right: 100px;
-}
-
 footer {
   font-family: open_sanslight;
   background: #579C87;
@@ -252,6 +244,9 @@ header h1 {
   font-family: "caveatbold";
   margin-bottom: 25px;
 }
+.bloc:nth-child(1) .bloc_menu h2 {
+  text-transform: uppercase;
+}
 .bloc:nth-child(2) .bloc_menu {
   background: #FFF5FE;
   font-family: "cmu_serifitalic";
@@ -283,22 +278,23 @@ header h1 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 14vw;
+  height: 16vw;
 }
 .bloc_menu h3 {
   margin: 0px;
 }
-.bloc_menu img {
-  width: 20%;
+.bloc_menu i {
+  font-size: 2vw;
 }
-.bloc .next {
+
+.next {
   display: flex;
   justify-content: center;
   align-items: center;
   padding-bottom: 0;
   margin-bottom: 5%;
 }
-.bloc .next-content {
+.next-content {
   border-radius: 15px;
   margin: 2%;
   width: 25%;
@@ -309,23 +305,23 @@ header h1 {
   justify-content: space-evenly;
   align-items: center;
 }
-.bloc .next-content .point {
+.next-content .point {
   background-color: #FDCB46;
   height: 0.5vw;
   width: 0.5vw;
   border-radius: 20px;
   animation: points 1000ms backwards infinite;
 }
-.bloc .next-content .point--1 {
+.next-content .point--1 {
   animation-delay: 333.3333333333ms;
 }
-.bloc .next-content .point--2 {
+.next-content .point--2 {
   animation-delay: 666.6666666667ms;
 }
-.bloc .next-content .point--3 {
+.next-content .point--3 {
   animation-delay: 1000ms;
 }
-.bloc .next h2 {
+.next h2 {
   font-size: 30px;
 }
 
@@ -393,6 +389,14 @@ header h1 {
 }
 .palette_du_gout .trait_gauche {
   width: 100%;
+}
+.palette_du_gout .plat {
+  margin-left: 75px;
+}
+.palette_du_gout .prix {
+  margin-right: 75px;
+  display: flex;
+  align-items: center;
 }
 
 /* Proprietees de la page lanoteenchantee.html */
@@ -544,6 +548,14 @@ header h1 {
 .french_chic .trait_gauche {
   width: 100%;
 }
+.french_chic .plat {
+  margin-left: 75px;
+}
+.french_chic .prix {
+  margin-right: 75px;
+  display: flex;
+  align-items: center;
+}
 
 /* Proprietees de la page le delice des papilles */
 .delice_papilles > .main_title {
@@ -611,6 +623,706 @@ header h1 {
 }
 .delice_papilles .trait_gauche {
   width: 100%;
+}
+.delice_papilles .plat {
+  margin-left: 75px;
+}
+.delice_papilles .prix {
+  margin-right: 75px;
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (min-width: 320px) and (max-width: 599px) {
+  .index {
+    margin: 50px 0 50px 0;
+  }
+  .index .bloc {
+    width: 90%;
+  }
+  .index .bloc_menu {
+    width: 90%;
+    margin-left: 5%;
+    height: 65vw;
+    font-size: 18px;
+    margin-bottom: 25px;
+  }
+  .index .bloc_menu i {
+    font-size: 10vw;
+  }
+
+  .next {
+    margin-bottom: 40%;
+  }
+  .next-content {
+    width: 85%;
+  }
+  .next-content .point {
+    height: 2vw;
+    width: 2vw;
+  }
+  .next h2 {
+    font-size: 26px;
+  }
+
+  .note_enchantee .main_title {
+    font-size: 20px;
+  }
+  .note_enchantee .fa-music_top-img {
+    font-size: 45px;
+  }
+  .note_enchantee .menu {
+    margin: 0 1% 40% 1%;
+  }
+  .note_enchantee .menu table {
+    width: 98%;
+  }
+  .note_enchantee .menu table h3 {
+    font-size: 24px;
+    padding-top: 8px;
+  }
+  .note_enchantee .menu table td {
+    font-size: 20px;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 5%;
+  }
+  .note_enchantee .menu table tr {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .note_enchantee .menu table th > p {
+    width: 20%;
+  }
+  .note_enchantee h4 {
+    font-size: 30px;
+  }
+
+  .french_chic .main_title {
+    font-size: 20px;
+  }
+  .french_chic .menu {
+    margin: 0 1% 40% 1%;
+  }
+  .french_chic .menu > table {
+    width: 98%;
+  }
+  .french_chic .menu > table th h3 {
+    font-size: 16px;
+    padding-top: 20px;
+    height: auto;
+  }
+  .french_chic .menu > table th > p {
+    width: 16%;
+  }
+  .french_chic .menu > table td {
+    font-size: 14px;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+    margin: 0;
+    margin-bottom: 5%;
+  }
+  .french_chic .menu > table tr {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .delice_papilles .main_title {
+    font-size: 20px;
+  }
+  .delice_papilles .menu {
+    margin: 0 1% 40% 1%;
+  }
+  .delice_papilles .menu_title {
+    font-size: 30px;
+  }
+  .delice_papilles .menu > table {
+    width: 98%;
+  }
+  .delice_papilles .menu > table th h3 {
+    font-size: 16px;
+    padding-top: 15px;
+    height: auto;
+  }
+  .delice_papilles .menu > table th p {
+    width: 21%;
+  }
+  .delice_papilles .menu > table td {
+    font-size: 14px;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    margin: 0;
+    margin-bottom: 5%;
+  }
+  .delice_papilles .menu > table tr {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .palette_du_gout .main_title {
+    font-size: 20px;
+  }
+  .palette_du_gout .menu {
+    margin: 0 1% 40% 1%;
+  }
+  .palette_du_gout .menu_title {
+    font-size: 34px;
+  }
+  .palette_du_gout .menu > table {
+    width: 98%;
+  }
+  .palette_du_gout .menu > table th h3 {
+    font-size: 16px;
+    padding-top: 15px;
+    height: auto;
+  }
+  .palette_du_gout .menu > table th p {
+    width: 28%;
+  }
+  .palette_du_gout .menu > table td {
+    font-size: 15px;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    margin: 0;
+    margin-bottom: 5%;
+  }
+  .palette_du_gout .menu > table tr {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 768px) {
+  .index {
+    margin: 50px 0 50px 0;
+  }
+  .index .bloc_menu {
+    height: 44vw;
+    font-size: 20px;
+  }
+  .index .bloc_menu i {
+    font-size: 5vw;
+  }
+
+  .next {
+    margin-bottom: 13%;
+  }
+  .next-content {
+    width: 45%;
+  }
+  .next-content .point {
+    height: 0.9vw;
+    width: 0.9vw;
+  }
+  .next h2 {
+    font-size: 26px;
+  }
+
+  .note_enchantee .main_title {
+    font-size: 24px;
+  }
+  .note_enchantee .fa-music_top-img {
+    font-size: 50px;
+  }
+  .note_enchantee .menu {
+    margin: 0 2% 16% 2%;
+  }
+  .note_enchantee .menu table {
+    width: 90%;
+  }
+  .note_enchantee .menu table h3 {
+    font-size: 30px;
+  }
+  .note_enchantee .menu table td {
+    font-size: 22px;
+  }
+  .note_enchantee .menu table th > p {
+    width: 28%;
+  }
+  .note_enchantee h4 {
+    font-size: 30px;
+  }
+
+  .french_chic .main_title {
+    font-size: 24px;
+  }
+  .french_chic .menu {
+    margin: 0 2% 16% 2%;
+  }
+  .french_chic .menu > table {
+    width: 93%;
+  }
+  .french_chic .menu > table th h3 {
+    font-size: 18px;
+    padding-top: 10px;
+    height: auto;
+  }
+  .french_chic .menu > table th > p {
+    width: 28%;
+  }
+  .french_chic .menu > table td {
+    font-size: 16px;
+  }
+
+  .delice_papilles .main_title {
+    font-size: 24px;
+  }
+  .delice_papilles .menu {
+    margin: 0 2% 16% 2%;
+  }
+  .delice_papilles .menu_title {
+    font-size: 40px;
+  }
+  .delice_papilles .menu > table {
+    width: 93%;
+  }
+  .delice_papilles .menu > table th h3 {
+    font-size: 21px;
+    padding-top: 0;
+    height: auto;
+  }
+  .delice_papilles .menu > table th p {
+    width: 28%;
+  }
+  .delice_papilles .menu > table td {
+    font-size: 18px;
+  }
+
+  .palette_du_gout .main_title {
+    font-size: 24px;
+  }
+  .palette_du_gout .menu {
+    margin: 0 2% 16% 2%;
+  }
+  .palette_du_gout .menu_title {
+    font-size: 40px;
+  }
+  .palette_du_gout .menu > table {
+    width: 93%;
+  }
+  .palette_du_gout .menu > table th h3 {
+    font-size: 21px;
+    padding-top: 0;
+    height: auto;
+  }
+  .palette_du_gout .menu > table th p {
+    width: 34%;
+  }
+  .palette_du_gout .menu > table td {
+    font-size: 18px;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 919px) {
+  .index {
+    margin: 50px 0 50px 0;
+  }
+  .index .bloc_menu {
+    height: 44vw;
+    font-size: 20px;
+  }
+  .index .bloc_menu i {
+    font-size: 5vw;
+  }
+
+  .next {
+    margin-bottom: 13%;
+  }
+  .next-content {
+    width: 38%;
+  }
+  .next-content .point {
+    height: 0.8vw;
+    width: 0.8vw;
+  }
+  .next h2 {
+    font-size: 26px;
+  }
+
+  .note_enchantee .main_title {
+    font-size: 26px;
+  }
+  .note_enchantee .fa-music_top-img {
+    font-size: 50px;
+  }
+  .note_enchantee .menu {
+    margin: 0 2% 12% 2%;
+  }
+  .note_enchantee .menu table {
+    width: 90%;
+  }
+  .note_enchantee .menu table h3 {
+    font-size: 30px;
+  }
+  .note_enchantee .menu table td {
+    font-size: 24px;
+  }
+  .note_enchantee .menu table th > p {
+    width: auto;
+  }
+  .note_enchantee h4 {
+    font-size: 32px;
+  }
+
+  .french_chic .main_title {
+    font-size: 26px;
+  }
+  .french_chic .menu {
+    margin: 0 5% 12% 5%;
+  }
+  .french_chic .menu > table {
+    width: 90%;
+  }
+  .french_chic .menu > table th h3 {
+    font-size: 21px;
+    padding-top: 5px;
+    height: auto;
+  }
+  .french_chic .menu > table th > p {
+    width: 29%;
+  }
+  .french_chic .menu > table td {
+    font-size: 17px;
+  }
+
+  .delice_papilles .main_title {
+    font-size: 26px;
+  }
+  .delice_papilles .menu {
+    margin: 0 5% 12% 5%;
+  }
+  .delice_papilles .menu > table {
+    width: 90%;
+  }
+  .delice_papilles .menu > table th h3 {
+    font-size: 23px;
+    padding-top: 0;
+    height: auto;
+  }
+  .delice_papilles .menu > table th p {
+    width: 28%;
+  }
+  .delice_papilles .menu > table td {
+    font-size: 20px;
+  }
+
+  .palette_du_gout .main_title {
+    font-size: 26px;
+  }
+  .palette_du_gout .menu {
+    margin: 0 5% 12% 5%;
+  }
+  .palette_du_gout .menu > table {
+    width: 90%;
+  }
+  .palette_du_gout .menu > table th h3 {
+    font-size: 23px;
+    padding-top: 0;
+    height: auto;
+  }
+  .palette_du_gout .menu > table th p {
+    width: auto;
+  }
+  .palette_du_gout .menu > table td {
+    font-size: 20px;
+  }
+}
+@media screen and (min-width: 920px) and (max-width: 1023px) {
+  .index {
+    margin: 50px 5% 50px 5%;
+  }
+  .index .bloc_menu {
+    height: 34vw;
+    font-size: 20px;
+  }
+  .index .bloc_menu i {
+    font-size: 4.4vw;
+  }
+
+  .next {
+    margin-bottom: 10%;
+  }
+  .next-content {
+    width: 35%;
+  }
+  .next-content .point {
+    height: 0.7vw;
+    width: 0.7vw;
+  }
+  .next h2 {
+    font-size: 26px;
+  }
+
+  .note_enchantee .main_title {
+    font-size: 28px;
+  }
+  .note_enchantee .fa-music_top-img {
+    font-size: 55px;
+  }
+  .note_enchantee .menu {
+    margin: 0 5% 10% 5%;
+  }
+  .note_enchantee .menu table h3 {
+    font-size: 32px;
+  }
+  .note_enchantee .menu table td {
+    font-size: 26px;
+  }
+  .note_enchantee .menu table th > p {
+    width: 30%;
+  }
+  .note_enchantee h4 {
+    font-size: 36px;
+  }
+
+  .french_chic .main_title {
+    font-size: 28px;
+  }
+  .french_chic .menu {
+    margin: 0 5% 10% 5%;
+  }
+  .french_chic .menu > table th h3 {
+    font-size: 20px;
+    padding-top: 5px;
+    height: auto;
+  }
+  .french_chic .menu > table th > p {
+    width: 28%;
+  }
+  .french_chic .menu > table td {
+    font-size: 17px;
+  }
+
+  .delice_papilles .main_title {
+    font-size: 28px;
+  }
+  .delice_papilles .menu {
+    margin: 0 5% 10% 5%;
+  }
+  .delice_papilles .menu > table th h3 {
+    font-size: 23px;
+    padding-top: 0;
+    height: auto;
+  }
+  .delice_papilles .menu > table th p {
+    width: 30%;
+  }
+  .delice_papilles .menu > table td {
+    font-size: 20px;
+  }
+
+  .palette_du_gout .main_title {
+    font-size: 28px;
+  }
+  .palette_du_gout .menu {
+    margin: 0 5% 10% 5%;
+  }
+  .palette_du_gout .menu > table th h3 {
+    font-size: 23px;
+    padding-top: 0;
+    height: auto;
+  }
+  .palette_du_gout .menu > table th p {
+    width: 37%;
+  }
+  .palette_du_gout .menu > table td {
+    font-size: 20px;
+  }
+}
+@media screen and (min-width: 1200px) and (max-width: 1440px) {
+  .index {
+    margin: 50px 15% 50px 15%;
+  }
+  .index .bloc_menu {
+    height: 26vw;
+    font-size: 20px;
+  }
+  .index .bloc_menu i {
+    font-size: 2.8vw;
+  }
+
+  .next {
+    margin-bottom: 6%;
+  }
+  .next-content {
+    width: 28%;
+  }
+  .next h2 {
+    font-size: 26px;
+  }
+
+  .note_enchantee .main_title {
+    font-size: 30px;
+  }
+  .note_enchantee .menu {
+    margin: 0 15% 10% 15%;
+  }
+  .note_enchantee .menu table h3 {
+    font-size: 34px;
+  }
+  .note_enchantee .menu table td {
+    font-size: 26px;
+  }
+  .note_enchantee .menu table th > p {
+    width: 30%;
+  }
+  .note_enchantee h4 {
+    font-size: 38px;
+  }
+
+  .french_chic .main_title {
+    font-size: 30px;
+  }
+  .french_chic .menu {
+    margin: 0 15% 10% 15%;
+  }
+  .french_chic .menu > table th h3 {
+    font-size: 22px;
+    padding-top: 0;
+    height: auto;
+  }
+  .french_chic .menu > table th > p {
+    width: 30%;
+  }
+  .french_chic .menu > table td {
+    font-size: 17px;
+  }
+
+  .delice_papilles .main_title {
+    font-size: 30px;
+  }
+  .delice_papilles .menu {
+    margin: 0 15% 10% 15%;
+  }
+  .delice_papilles .menu > table th h3 {
+    font-size: 23px;
+    padding-top: 0;
+    height: auto;
+  }
+  .delice_papilles .menu > table th p {
+    width: 30%;
+  }
+  .delice_papilles .menu > table td {
+    font-size: 20px;
+  }
+
+  .palette_du_gout .main_title {
+    font-size: 30px;
+  }
+  .palette_du_gout .menu {
+    margin: 0 15% 10% 15%;
+  }
+  .palette_du_gout .menu > table th h3 {
+    font-size: 23px;
+    padding-top: 0;
+    height: auto;
+  }
+  .palette_du_gout .menu > table th p {
+    width: 38%;
+  }
+  .palette_du_gout .menu > table td {
+    font-size: 20px;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1199px) {
+  .index {
+    margin: 50px 10% 50px 10%;
+  }
+  .index .bloc_menu {
+    height: 30vw;
+    font-size: 20px;
+  }
+  .index .bloc_menu i {
+    font-size: 3.6vw;
+  }
+
+  .next {
+    margin-bottom: 8%;
+  }
+  .next-content {
+    width: 30%;
+  }
+  .next-content .point {
+    height: 0.6vw;
+    width: 0.6vw;
+  }
+  .next h2 {
+    font-size: 26px;
+  }
+
+  .note_enchantee .main_title {
+    font-size: 30px;
+  }
+  .note_enchantee .menu {
+    margin: 0 8% 10% 8%;
+  }
+  .note_enchantee .menu table h3 {
+    font-size: 34px;
+  }
+  .note_enchantee .menu table td {
+    font-size: 26px;
+  }
+  .note_enchantee .menu table th > p {
+    width: 30%;
+  }
+  .note_enchantee h4 {
+    font-size: 38px;
+  }
+
+  .french_chic .main_title {
+    font-size: 30px;
+  }
+  .french_chic .menu {
+    margin: 0 8% 10% 8%;
+  }
+  .french_chic .menu > table th h3 {
+    font-size: 22px;
+    padding-top: 0;
+    height: auto;
+  }
+  .french_chic .menu > table th > p {
+    width: 30%;
+  }
+  .french_chic .menu > table td {
+    font-size: 17px;
+  }
+
+  .delice_papilles .main_title {
+    font-size: 30px;
+  }
+  .delice_papilles .menu {
+    margin: 0 8% 10% 8%;
+  }
+  .delice_papilles .menu > table th h3 {
+    font-size: 23px;
+    padding-top: 0;
+    height: auto;
+  }
+  .delice_papilles .menu > table th p {
+    width: 30%;
+  }
+  .delice_papilles .menu > table td {
+    font-size: 20px;
+  }
+
+  .palette_du_gout .main_title {
+    font-size: 30px;
+  }
+  .palette_du_gout .menu {
+    margin: 0 8% 10% 8%;
+  }
+  .palette_du_gout .menu > table th h3 {
+    font-size: 23px;
+    padding-top: 0;
+    height: auto;
+  }
+  .palette_du_gout .menu > table th p {
+    width: 38%;
+  }
+  .palette_du_gout .menu > table td {
+    font-size: 20px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

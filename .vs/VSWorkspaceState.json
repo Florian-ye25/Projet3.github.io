@@ -1,8 +1,10 @@
 {
   "ExpandedNodes": [
     "",
-    "\\sass"
+    "\\sass",
+    "\\sass\\Responsive",
+    "\\sass\\Utils"
   ],
-  "SelectedNode": "\\sass\\Pages",
+  "SelectedNode": "\\sass\\Responsive\\_ReTelephone.scss",
   "PreviewInSolutionExplorer": false
 }
