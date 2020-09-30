@@ -3,14 +3,18 @@ footer {
     background: $green;
     display: flex;
     justify-content: space-between;
-    color: $yellow;
     font-weight: normal;
     position: fixed;
     bottom: 0;
     width: 100%;
+    
+    a {
+        text-decoration: none;
+    }
 
     h2 {
         padding: 0px 15px 0px 15px;
+        color: $yellow;
 
         &:hover {
             animation: headshake 100ms cubic-bezier(.4,.1,.6,.9) 2;

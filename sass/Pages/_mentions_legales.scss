@@ -1,0 +1,18 @@
+.mentions_legales {
+    > .menu {
+        @include menu;
+        background: $colormentions;
+        font-family: 'tex_gyre_scholaregular';
+        margin : 5% 15% 10% 15%;
+        text-align: center;
+        padding: 2% 0% 2% 0%;
+
+        h1, h2 {
+            color : $yellow;
+        }
+
+        p {
+            color: $green;
+        }
+    }
+}
