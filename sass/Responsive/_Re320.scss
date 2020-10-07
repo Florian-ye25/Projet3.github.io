@@ -51,9 +51,12 @@
             table {
                 width: 98%;
 
-                h3 {
-                    font-size: 24px;
-                    padding-top: 8px;
+                th {
+                    .title_change {
+                        font-size: 28px;
+                        height: 55%;
+                        padding-top: 8px;
+                    }
                 }
 
                 td {
@@ -62,7 +65,7 @@
                     width: 100%;
                     margin-bottom: 5%;
                 }
-                
+
                 tr {
                     flex-wrap: wrap;
                     justify-content: center;
@@ -93,10 +96,10 @@
                 width: 98%;
 
                 th {
-                    h3 {
+                    .title_change {
                         font-size: 16px;
-                        padding-top: 20px;
-                        height: auto;
+                        padding-top: 11px;
+                        height: 40%;
                     }
 
                     > p {
@@ -137,10 +140,10 @@
                 width: 98%;
 
                 th {
-                    h3 {
-                        font-size: 16px;
-                        padding-top: 15px;
-                        height: auto;
+                    .title_change {
+                        font-size: 18px;
+                        padding-top: 8px;
+                        height: 40%;
                     }
 
                     p {
@@ -177,14 +180,14 @@
                 font-size: 34px;
             }
 
-            > table {
+           > table {
                 width: 98%;
 
                 th {
-                    h3 {
-                        font-size: 16px;
-                        padding-top: 15px;
-                        height: auto;
+                    .title_change {
+                        font-size: 17px;
+                        padding-top: 9px;
+                        height: 40%;
                     }
 
                     p {
@@ -211,7 +214,7 @@
 
     footer {
         h2 {
-            font-size: 17px;
+            font-size: 16px;
         }
     }
 

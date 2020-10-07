@@ -23,11 +23,11 @@
             width: 80%;
 
             th {
-                > h3 {
-                    height: 35%;
-                    font-size: 14px;
-                    padding-top: 13px;
+                .title_change {
                     text-align: center;
+                    font-size: 20px;
+                    height: 45%;
+                    margin-top: 25px;
                 }
             }
 

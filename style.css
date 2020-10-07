@@ -378,10 +378,11 @@ header h1 {
 .palette_du_gout .menu > table {
   width: 90%;
 }
-.palette_du_gout .menu > table th > h3 {
-  font-size: 16px;
-  padding-top: 10px;
+.palette_du_gout .menu > table th .title_change {
   text-align: center;
+  font-size: 24px;
+  height: 45%;
+  margin-top: 22px;
 }
 .palette_du_gout .menu > table td {
   font-size: 14px;
@@ -457,9 +458,11 @@ header h1 {
 .note_enchantee .menu > table {
   width: 80%;
 }
-.note_enchantee .menu > table th > h3 {
-  margin: 18px 0 18px 0;
+.note_enchantee .menu > table th .title_change {
   text-align: center;
+  font-size: 34px;
+  height: 60%;
+  margin-top: 15px;
 }
 .note_enchantee .menu > table td {
   font-size: 20px;
@@ -526,11 +529,11 @@ header h1 {
 .french_chic .menu > table {
   width: 80%;
 }
-.french_chic .menu > table th > h3 {
-  height: 35%;
-  font-size: 14px;
-  padding-top: 13px;
+.french_chic .menu > table th .title_change {
   text-align: center;
+  font-size: 20px;
+  height: 45%;
+  margin-top: 25px;
 }
 .french_chic .menu > table td {
   font-size: 14px;
@@ -611,11 +614,11 @@ header h1 {
 .delice_papilles .menu > table {
   width: 90%;
 }
-.delice_papilles .menu > table th > h3 {
-  height: 35%;
-  font-size: 16px;
-  padding-top: 12px;
+.delice_papilles .menu > table th .title_change {
   text-align: center;
+  font-size: 24px;
+  height: 45%;
+  margin-top: 23px;
 }
 .delice_papilles .menu > table td {
   font-size: 14px;
@@ -722,8 +725,9 @@ header h1 {
   .note_enchantee .menu table {
     width: 98%;
   }
-  .note_enchantee .menu table h3 {
-    font-size: 24px;
+  .note_enchantee .menu table th .title_change {
+    font-size: 28px;
+    height: 55%;
     padding-top: 8px;
   }
   .note_enchantee .menu table td {
@@ -752,10 +756,10 @@ header h1 {
   .french_chic .menu > table {
     width: 98%;
   }
-  .french_chic .menu > table th h3 {
+  .french_chic .menu > table th .title_change {
     font-size: 16px;
-    padding-top: 20px;
-    height: auto;
+    padding-top: 11px;
+    height: 40%;
   }
   .french_chic .menu > table th > p {
     width: 16%;
@@ -785,10 +789,10 @@ header h1 {
   .delice_papilles .menu > table {
     width: 98%;
   }
-  .delice_papilles .menu > table th h3 {
-    font-size: 16px;
-    padding-top: 15px;
-    height: auto;
+  .delice_papilles .menu > table th .title_change {
+    font-size: 18px;
+    padding-top: 8px;
+    height: 40%;
   }
   .delice_papilles .menu > table th p {
     width: 21%;
@@ -818,10 +822,10 @@ header h1 {
   .palette_du_gout .menu > table {
     width: 98%;
   }
-  .palette_du_gout .menu > table th h3 {
-    font-size: 16px;
-    padding-top: 15px;
-    height: auto;
+  .palette_du_gout .menu > table th .title_change {
+    font-size: 17px;
+    padding-top: 9px;
+    height: 40%;
   }
   .palette_du_gout .menu > table th p {
     width: 28%;
@@ -840,7 +844,7 @@ header h1 {
   }
 
   footer h2 {
-    font-size: 17px;
+    font-size: 16px;
   }
 
   .mentions_legales > .menu {
@@ -891,8 +895,10 @@ header h1 {
   .note_enchantee .menu table {
     width: 90%;
   }
-  .note_enchantee .menu table h3 {
+  .note_enchantee .menu table th .title_change {
     font-size: 30px;
+    padding-top: 5px;
+    height: 55%;
   }
   .note_enchantee .menu table td {
     font-size: 22px;
@@ -913,10 +919,10 @@ header h1 {
   .french_chic .menu > table {
     width: 93%;
   }
-  .french_chic .menu > table th h3 {
+  .french_chic .menu > table th .title_change {
     font-size: 18px;
-    padding-top: 10px;
-    height: auto;
+    padding-top: 6px;
+    height: 40%;
   }
   .french_chic .menu > table th > p {
     width: 28%;
@@ -937,10 +943,10 @@ header h1 {
   .delice_papilles .menu > table {
     width: 93%;
   }
-  .delice_papilles .menu > table th h3 {
+  .delice_papilles .menu > table th .title_change {
     font-size: 21px;
-    padding-top: 0;
-    height: auto;
+    padding-top: 2px;
+    height: 45%;
   }
   .delice_papilles .menu > table th p {
     width: 28%;
@@ -961,10 +967,10 @@ header h1 {
   .palette_du_gout .menu > table {
     width: 93%;
   }
-  .palette_du_gout .menu > table th h3 {
+  .palette_du_gout .menu > table th .title_change {
     font-size: 21px;
-    padding-top: 0;
-    height: auto;
+    padding-top: 2px;
+    height: 45%;
   }
   .palette_du_gout .menu > table th p {
     width: 34%;
@@ -1021,11 +1027,13 @@ header h1 {
   .note_enchantee .menu table {
     width: 90%;
   }
-  .note_enchantee .menu table h3 {
-    font-size: 30px;
-  }
   .note_enchantee .menu table td {
     font-size: 24px;
+  }
+  .note_enchantee .menu table th .title_change {
+    font-size: 30px;
+    padding-top: 5px;
+    height: 55%;
   }
   .note_enchantee .menu table th > p {
     width: auto;
@@ -1043,10 +1051,10 @@ header h1 {
   .french_chic .menu > table {
     width: 90%;
   }
-  .french_chic .menu > table th h3 {
+  .french_chic .menu > table th .title_change {
     font-size: 21px;
-    padding-top: 5px;
-    height: auto;
+    padding-top: 0px;
+    height: 50%;
   }
   .french_chic .menu > table th > p {
     width: 29%;
@@ -1064,10 +1072,10 @@ header h1 {
   .delice_papilles .menu > table {
     width: 90%;
   }
-  .delice_papilles .menu > table th h3 {
+  .delice_papilles .menu > table th .title_change {
     font-size: 23px;
     padding-top: 0;
-    height: auto;
+    height: 45%;
   }
   .delice_papilles .menu > table th p {
     width: 28%;
@@ -1085,10 +1093,10 @@ header h1 {
   .palette_du_gout .menu > table {
     width: 90%;
   }
-  .palette_du_gout .menu > table th h3 {
+  .palette_du_gout .menu > table th .title_change {
     font-size: 23px;
     padding-top: 0;
-    height: auto;
+    height: 50%;
   }
   .palette_du_gout .menu > table th p {
     width: auto;
@@ -1139,11 +1147,11 @@ header h1 {
   .note_enchantee .menu {
     margin: 0 5% 10% 5%;
   }
-  .note_enchantee .menu table h3 {
-    font-size: 32px;
-  }
   .note_enchantee .menu table td {
     font-size: 26px;
+  }
+  .note_enchantee .menu table th .title_change {
+    font-size: 32px;
   }
   .note_enchantee .menu table th > p {
     width: 30%;
@@ -1158,10 +1166,10 @@ header h1 {
   .french_chic .menu {
     margin: 0 5% 10% 5%;
   }
-  .french_chic .menu > table th h3 {
+  .french_chic .menu > table th .title_change {
     font-size: 20px;
-    padding-top: 5px;
-    height: auto;
+    padding-top: 0px;
+    height: 45%;
   }
   .french_chic .menu > table th > p {
     width: 28%;
@@ -1176,10 +1184,10 @@ header h1 {
   .delice_papilles .menu {
     margin: 0 5% 10% 5%;
   }
-  .delice_papilles .menu > table th h3 {
+  .delice_papilles .menu > table th .title_change {
     font-size: 23px;
     padding-top: 0;
-    height: auto;
+    height: 45%;
   }
   .delice_papilles .menu > table th p {
     width: 30%;
@@ -1194,10 +1202,10 @@ header h1 {
   .palette_du_gout .menu {
     margin: 0 5% 10% 5%;
   }
-  .palette_du_gout .menu > table th h3 {
+  .palette_du_gout .menu > table th .title_change {
     font-size: 23px;
     padding-top: 0;
-    height: auto;
+    height: 50%;
   }
   .palette_du_gout .menu > table th p {
     width: 37%;
@@ -1234,11 +1242,11 @@ header h1 {
   .note_enchantee .menu {
     margin: 0 15% 10% 15%;
   }
-  .note_enchantee .menu table h3 {
-    font-size: 34px;
-  }
   .note_enchantee .menu table td {
     font-size: 26px;
+  }
+  .note_enchantee .menu table th .title_change {
+    font-size: 34px;
   }
   .note_enchantee .menu table th > p {
     width: 30%;
@@ -1253,10 +1261,10 @@ header h1 {
   .french_chic .menu {
     margin: 0 15% 10% 15%;
   }
-  .french_chic .menu > table th h3 {
+  .french_chic .menu > table th .title_change {
     font-size: 22px;
     padding-top: 0;
-    height: auto;
+    height: 50%;
   }
   .french_chic .menu > table th > p {
     width: 30%;
@@ -1271,10 +1279,10 @@ header h1 {
   .delice_papilles .menu {
     margin: 0 15% 10% 15%;
   }
-  .delice_papilles .menu > table th h3 {
+  .delice_papilles .menu > table th .title_change {
     font-size: 23px;
     padding-top: 0;
-    height: auto;
+    height: 50%;
   }
   .delice_papilles .menu > table th p {
     width: 30%;
@@ -1289,10 +1297,10 @@ header h1 {
   .palette_du_gout .menu {
     margin: 0 15% 10% 15%;
   }
-  .palette_du_gout .menu > table th h3 {
+  .palette_du_gout .menu > table th .title_change {
     font-size: 23px;
     padding-top: 0;
-    height: auto;
+    height: 50%;
   }
   .palette_du_gout .menu > table th p {
     width: 38%;
@@ -1333,11 +1341,11 @@ header h1 {
   .note_enchantee .menu {
     margin: 0 8% 10% 8%;
   }
-  .note_enchantee .menu table h3 {
-    font-size: 34px;
-  }
   .note_enchantee .menu table td {
     font-size: 26px;
+  }
+  .note_enchantee .menu table th .title_change {
+    font-size: 34px;
   }
   .note_enchantee .menu table th > p {
     width: 30%;
@@ -1352,10 +1360,10 @@ header h1 {
   .french_chic .menu {
     margin: 0 8% 10% 8%;
   }
-  .french_chic .menu > table th h3 {
+  .french_chic .menu > table th .title_change {
     font-size: 22px;
     padding-top: 0;
-    height: auto;
+    height: 50%;
   }
   .french_chic .menu > table th > p {
     width: 30%;
@@ -1370,10 +1378,10 @@ header h1 {
   .delice_papilles .menu {
     margin: 0 8% 10% 8%;
   }
-  .delice_papilles .menu > table th h3 {
+  .delice_papilles .menu > table th .title_change {
     font-size: 23px;
     padding-top: 0;
-    height: auto;
+    height: 45%;
   }
   .delice_papilles .menu > table th p {
     width: 30%;
@@ -1388,10 +1396,10 @@ header h1 {
   .palette_du_gout .menu {
     margin: 0 8% 10% 8%;
   }
-  .palette_du_gout .menu > table th h3 {
+  .palette_du_gout .menu > table th .title_change {
     font-size: 23px;
     padding-top: 0;
-    height: auto;
+    height: 45%;
   }
   .palette_du_gout .menu > table th p {
     width: 38%;

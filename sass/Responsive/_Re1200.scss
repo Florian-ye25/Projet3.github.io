@@ -33,15 +33,15 @@
             margin: 0 15% 10% 15%;
 
             table {
-                h3 {
-                    font-size: 34px;
-                }
-
                 td {
                     font-size: 26px;
                 }
 
                 th {
+                    .title_change {
+                        font-size: 34px;
+                    }
+
                     > p {
                         width: 30%;
                     }
@@ -64,10 +64,10 @@
 
             > table {
                 th {
-                    h3 {
+                    .title_change {
                         font-size: 22px;
                         padding-top: 0;
-                        height: auto;
+                        height: 50%;
                     }
 
                     > p {
@@ -92,10 +92,10 @@
 
             > table {
                 th {
-                    h3 {
+                    .title_change {
                         font-size: 23px;
                         padding-top: 0;
-                        height: auto;
+                        height: 50%;
                     }
 
                     p {
@@ -120,10 +120,10 @@
 
             > table {
                 th {
-                    h3 {
+                    .title_change {
                         font-size: 23px;
                         padding-top: 0;
-                        height: auto;
+                        height: 50%;
                     }
 
                     p {

@@ -37,22 +37,24 @@
         .fa-music_top-img {
             font-size: 50px;
         }
-            
-            .menu {
+
+        .menu {
             margin: 0 2% 12% 2%;
 
             table {
                 width: 90%;
-
-                h3 {
-                    font-size: 30px;
-                }
 
                 td {
                     font-size: 24px;
                 }
 
                 th {
+                    .title_change {
+                        font-size: 30px;
+                        padding-top: 5px;
+                        height: 55%;
+                    }
+
                     > p {
                         width: auto;
                     }
@@ -77,14 +79,14 @@
                 width: 90%;
 
                 th {
-                    h3 {
+                    .title_change {
                         font-size: 21px;
-                        padding-top: 5px;
-                        height: auto;
+                        padding-top: 0px;
+                        height: 50%;
                     }
 
                     > p {
-                        width: 29% ;
+                        width: 29%;
                     }
                 }
 
@@ -107,10 +109,10 @@
                 width: 90%;
 
                 th {
-                    h3 {
+                    .title_change {
                         font-size: 23px;
                         padding-top: 0;
-                        height: auto;
+                        height: 45%;
                     }
 
                     p {
@@ -137,10 +139,10 @@
                 width: 90%;
 
                 th {
-                    h3 {
+                    .title_change {
                         font-size: 23px;
                         padding-top: 0;
-                        height: auto;
+                        height: 50%;
                     }
 
                     p {

@@ -26,10 +26,11 @@
             }
 
             th {
-                > h3 {
-                    font-size: 16px;
-                    padding-top: 10px;
+                .title_change {
                     text-align: center;
+                    font-size: 24px;
+                    height: 45%;
+                    margin-top: 22px;
                 }
             }
 
