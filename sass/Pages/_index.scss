@@ -1,6 +1,6 @@
 /*  Proprietees de la page index.html*/
 
-.index {
+.main {
 	display: flex;
 	justify-content: center;
 	justify-content: space-around;
@@ -39,8 +39,8 @@
 
 		.bloc_menu {
 			background: $colorkey;
-			color: black;
 			font-family: 'caveatbold';
+			color: black;
 			margin-bottom: 25px;
 
 			h2 {
@@ -105,41 +105,43 @@
 }
 
 
-	.next {
+.next {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-bottom: 0;
+	margin-bottom: 5%;
+
+	&-content {
+		border-radius: 15px;
+		margin: 2%;
+		width: 25%;
 		display: flex;
+		background-color: $green;
+		color: $yellow;
 		justify-content: center;
+		justify-content: space-evenly;
 		align-items: center;
-		padding-bottom: 0;
-		margin-bottom: 5%;
+		font-weight: normal;
+		font-family: 'open_sanslight';
 
-		&-content {
-			border-radius: 15px;
-			margin: 2%;
-			width: 25%;
-			display: flex;
-			background-color: $green;
-			color: $yellow;
-			justify-content: center;
-			justify-content: space-evenly;
-			align-items: center;
+		.point {
+			background-color: $yellow;
+			height: 0.5vw;
+			width: 0.5vw;
+			border-radius: 20px;
+			animation: points $anim-dur backwards infinite;
 
-			.point {
-				background-color: $yellow;
-				height: 0.5vw;
-				width: 0.5vw;
-				border-radius: 20px;
-				animation: points $anim-dur backwards infinite;
-
-				@for $i from 1 through $num-points {
-					&--#{$i} {
-						animation-delay: $anim-delay * $i;
-					}
+			@for $i from 1 through $num-points {
+				&--#{$i} {
+					animation-delay: $anim-delay * $i;
 				}
 			}
 		}
-
-		h2 {
-			font-size: 30px;
-		}
 	}
+
+	h2 {
+		font-size: 30px;
+	}
+}
 

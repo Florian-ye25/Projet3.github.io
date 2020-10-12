@@ -211,7 +211,7 @@ header h1 {
 }
 
 /*  Proprietees de la page index.html*/
-.index {
+.main {
   display: flex;
   justify-content: center;
   justify-content: space-around;
@@ -244,8 +244,8 @@ header h1 {
 }
 .bloc:nth-child(1) .bloc_menu {
   background: #FCDFDB;
-  color: black;
   font-family: "caveatbold";
+  color: black;
   margin-bottom: 25px;
 }
 .bloc:nth-child(1) .bloc_menu h2 {
@@ -308,6 +308,8 @@ header h1 {
   justify-content: center;
   justify-content: space-evenly;
   align-items: center;
+  font-weight: normal;
+  font-family: "open_sanslight";
 }
 .next-content .point {
   background-color: #FDCB46;
