@@ -684,20 +684,20 @@ header h1 {
 }
 
 @media screen and (min-width: 320px) and (max-width: 599px) {
-  .index {
+  .main {
     margin: 50px 0 50px 0;
   }
-  .index .bloc {
+  .main .bloc {
     width: 90%;
   }
-  .index .bloc_menu {
+  .main .bloc_menu {
     width: 90%;
     margin-left: 5%;
     height: 110vw;
     font-size: 18px;
     margin-bottom: 25px;
   }
-  .index .bloc_menu i {
+  .main .bloc_menu i {
     font-size: 10vw;
   }
 
@@ -860,14 +860,14 @@ header h1 {
   }
 }
 @media screen and (min-width: 600px) and (max-width: 768px) {
-  .index {
+  .main {
     margin: 50px 0 50px 0;
   }
-  .index .bloc_menu {
+  .main .bloc_menu {
     height: 44vw;
     font-size: 20px;
   }
-  .index .bloc_menu i {
+  .main .bloc_menu i {
     font-size: 5vw;
   }
 
@@ -992,14 +992,14 @@ header h1 {
   }
 }
 @media screen and (min-width: 769px) and (max-width: 919px) {
-  .index {
+  .main {
     margin: 50px 0 50px 0;
   }
-  .index .bloc_menu {
+  .main .bloc_menu {
     height: 44vw;
     font-size: 20px;
   }
-  .index .bloc_menu i {
+  .main .bloc_menu i {
     font-size: 5vw;
   }
 
@@ -1115,14 +1115,14 @@ header h1 {
   }
 }
 @media screen and (min-width: 920px) and (max-width: 1023px) {
-  .index {
+  .main {
     margin: 50px 5% 50px 5%;
   }
-  .index .bloc_menu {
+  .main .bloc_menu {
     height: 34vw;
     font-size: 20px;
   }
-  .index .bloc_menu i {
+  .main .bloc_menu i {
     font-size: 4.4vw;
   }
 
@@ -1217,14 +1217,14 @@ header h1 {
   }
 }
 @media screen and (min-width: 1200px) and (max-width: 1440px) {
-  .index {
+  .main {
     margin: 50px 15% 50px 15%;
   }
-  .index .bloc_menu {
+  .main .bloc_menu {
     height: 26vw;
     font-size: 20px;
   }
-  .index .bloc_menu i {
+  .main .bloc_menu i {
     font-size: 2.8vw;
   }
 
@@ -1312,14 +1312,14 @@ header h1 {
   }
 }
 @media screen and (min-width: 1024px) and (max-width: 1199px) {
-  .index {
+  .main {
     margin: 50px 10% 50px 10%;
   }
-  .index .bloc_menu {
+  .main .bloc_menu {
     height: 30vw;
     font-size: 20px;
   }
-  .index .bloc_menu i {
+  .main .bloc_menu i {
     font-size: 3.6vw;
   }
 
